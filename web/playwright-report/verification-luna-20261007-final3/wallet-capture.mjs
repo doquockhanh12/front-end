@@ -1,0 +1,22 @@
+﻿import { chromium } from '@playwright/test';
+import { resetDemo, login } from '../../tests/e2e/demoHelpers.js';
+const dir = new URL('.', import.meta.url).pathname.replace(/^\//, '').replaceAll('/', '\\');
+const browser = await chromium.launch({ headless: true });
+const context = await browser.newContext({ baseURL: 'http://127.0.0.1:5181', viewport: { width: 390, height: 900 }, deviceScaleFactor: 1 });
+const page = await context.newPage();
+const errors = [];
+page.on('pageerror', e => errors.push(`pageerror: ${e.message}`));
+page.on('console', m => { if (m.type() === 'error') errors.push(`console: ${m.text()}`); });
+await resetDemo(page);
+await login(page, 'giabao', '/tutor/wallet');
+await page.evaluate(() => document.fonts.ready);
+const chat = await page.getByRole('button', { name: 'Mở cửa sổ trò chuyện' }).boundingBox();
+const badge = await page.locator('.wallet-card--escrow .escrow-shield-badge').boundingBox();
+const visibleControls = await page.locator('main button:visible').evaluateAll(els => els.map(e => { const r=e.getBoundingClientRect(); return { label:(e.innerText||e.getAttribute('aria-label')||'').trim(), box:{x:r.x,y:r.y,width:r.width,height:r.height} }; }));
+const intersection = (a,b) => { const width=Math.max(0,Math.min(a.x+a.width,b.x+b.width)-Math.max(a.x,b.x)); const height=Math.max(0,Math.min(a.y+a.height,b.y+b.height)-Math.max(a.y,b.y)); return {width,height,area:width*height}; };
+const geometry = await page.evaluate(() => ({viewportWidth:innerWidth,viewportHeight:innerHeight,documentWidth:document.documentElement.scrollWidth}));
+await page.screenshot({ path: dir + 'tutor-wallet-390x900-final3.png' });
+await page.screenshot({ path: dir + 'tutor-wallet-390x900-final3-full.png', fullPage: true });
+const result = {geometry,chat,badge,overlap:intersection(chat,badge),visibleControls,errors};
+await context.close(); await browser.close(); console.log(JSON.stringify(result,null,2));
+

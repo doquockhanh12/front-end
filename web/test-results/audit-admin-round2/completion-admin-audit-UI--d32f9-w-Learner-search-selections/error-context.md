@@ -1,0 +1,419 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: completion-admin-audit.spec.js >> UI-COMP-A08 inactive Admin subject is unavailable for new Learner search selections
+- Location: tests\e2e\completion-admin-audit.spec.js:77:1
+
+# Error details
+
+```
+Error: expect(locator).toHaveCount(expected) failed
+
+Locator:  getByRole('checkbox', { name: 'Toán', exact: true })
+Expected: 0
+Received: 1
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveCount" getByRole('checkbox', { name: 'Toán', exact: true }) with timeout 5000ms
+  - waiting for getByRole('checkbox', { name: 'Toán', exact: true })
+    13 × locator resolved to 1 element
+       - unexpected value "1"
+
+```
+
+```
+Error: browserContext._wrapApiCall: file data stream has unexpected number of bytes
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=f2e2]:
+  - generic [ref=f2e3]:
+    - banner [ref=f2e4]:
+      - generic [ref=f2e5]:
+        - link "TutorNearMe — trang chủ" [ref=f2e6] [cursor=pointer]:
+          - /url: /
+          - generic [ref=f2e7]: TN
+          - generic [ref=f2e8]:
+            - strong [ref=f2e9]: TutorNearMe
+            - generic [ref=f2e10]: Gia sư gần bạn
+        - navigation "Điều hướng chính" [ref=f2e11]:
+          - link "Tìm gia sư" [ref=f2e12] [cursor=pointer]:
+            - /url: /learner/search
+          - link "Đăng tin lớp" [ref=f2e13] [cursor=pointer]:
+            - /url: /learner/post-class
+          - link "Lớp của tôi" [ref=f2e14] [cursor=pointer]:
+            - /url: /learner/my-classes
+          - link "Lịch học" [ref=f2e15] [cursor=pointer]:
+            - /url: /learner/schedule
+          - link "Ví của tôi" [ref=f2e16] [cursor=pointer]:
+            - /url: /learner/wallet
+          - link "Trợ giúp" [ref=f2e17] [cursor=pointer]:
+            - /url: /help
+        - generic [ref=f2e18]:
+          - button "Thông báo" [ref=f2e20] [cursor=pointer]:
+            - generic [ref=f2e24]: "1"
+          - link "Ảnh đại diện của Nguyễn Minh Anh minhanh" [ref=f2e25] [cursor=pointer]:
+            - /url: /learner/dashboard
+            - img "Ảnh đại diện của Nguyễn Minh Anh" [ref=f2e26]:
+              - generic [aria-hidden] [ref=f2e27]: MA
+            - generic [ref=f2e28]: minhanh
+          - button "Đăng xuất" [ref=f2e29] [cursor=pointer]
+    - main [ref=f2e33]:
+      - generic [ref=f2e35]:
+        - generic [ref=f2e36]:
+          - generic [ref=f2e37]: TUTORNEARME · HỌC GẦN HƠN, HIỂU NHAU HƠN
+          - heading [level=1] [ref=f2e38]:
+            - text: Bạn đau đầu đểtìm gia sư tốt,
+            - emphasis [ref=f2e39]: TutorNearMesẽ giúp bạn.
+          - paragraph [ref=f2e40]: Tìm sinh viên gia sư theo đúng môn, khu vực, thời gian rảnh và mức phí gia đình mong muốn — tất cả trong một trải nghiệm rõ ràng, dễ so sánh.
+          - generic [ref=f2e41]:
+            - link "Tìm gia sư phù hợp" [ref=f2e42] [cursor=pointer]:
+              - /url: "#search-controls"
+            - link "Xem cách hoạt động ↘" [ref=f2e45] [cursor=pointer]:
+              - /url: /learner#how
+        - generic [ref=f2e46]:
+          - img "Học sinh học tập cùng bạn bè" [ref=f2e47]
+          - img "Gia sư đang hướng dẫn bài học" [ref=f2e48]
+          - generic [ref=f2e49]:
+            - generic [ref=f2e50]: Gần bạn
+            - generic [ref=f2e51]: ưu tiên khu vực phù hợp
+          - generic [ref=f2e52]:
+            - generic [ref=f2e53]: 4.9/5
+            - generic [ref=f2e54]: đánh giá demo
+      - region "Tìm kiếm nhanh" [ref=f2e55]:
+        - generic [ref=f2e56]:
+          - generic [ref=f2e57]:
+            - text: Tên hoặc từ khóa
+            - searchbox "Tên hoặc từ khóa" [ref=f2e62]
+          - generic [ref=f2e63]:
+            - text: Môn học
+            - combobox "Môn học" [ref=f2e64] [cursor=pointer]:
+              - option "Tất cả môn" [selected]
+              - option "Toán"
+              - option "Vật lý"
+              - option "Tiếng Anh"
+              - option "IELTS"
+              - option "Ngữ văn"
+              - option "Hóa học"
+          - generic [ref=f2e65]:
+            - text: Khu vực
+            - combobox "Khu vực" [ref=f2e66] [cursor=pointer]:
+              - option "Tất cả khu vực" [selected]
+              - option "Bình Thạnh"
+              - option "Thủ Đức"
+              - option "Quận 3"
+              - option "Phú Nhuận"
+          - generic [ref=f2e67]:
+            - text: Thời gian rảnh
+            - combobox "Thời gian rảnh" [ref=f2e68] [cursor=pointer]:
+              - option "Mọi khung giờ" [selected]
+              - option "Buổi sáng"
+              - option "Buổi chiều"
+              - option "Buổi tối"
+              - option "Cuối tuần"
+          - generic [ref=f2e69]:
+            - text: Mức phí
+            - combobox "Mức phí" [ref=f2e70] [cursor=pointer]:
+              - option "Mọi mức phí" [selected]
+              - option "Đến 160.000đ"
+              - option "Đến 180.000đ"
+              - option "Đến 200.000đ"
+          - button "Tìm gia sư" [ref=f2e71] [cursor=pointer]
+      - generic [ref=f2e75]:
+        - generic [ref=f2e76]:
+          - generic [ref=f2e77]:
+            - text: KHÁM PHÁ GIA SƯ
+            - heading "Một lựa chọn tốt bắt đầu từ sự phù hợp" [level=2] [ref=f2e78]
+          - paragraph [ref=f2e79]: Lọc theo điều quan trọng với bạn, rồi so sánh trong một góc nhìn rõ ràng.
+        - generic [ref=f2e80]:
+          - complementary "Bộ lọc gia sư" [ref=f2e81]:
+            - generic [ref=f2e82]:
+              - heading "Bộ lọc" [level=3] [ref=f2e85]
+              - button "Đóng bộ lọc" [ref=f2e86] [cursor=pointer]
+            - group "Môn học" [ref=f2e90]:
+              - generic [ref=f2e92] [cursor=pointer]:
+                - checkbox "Toán" [ref=f2e93]
+                - generic [ref=f2e94]: Toán
+              - generic [ref=f2e95] [cursor=pointer]:
+                - checkbox "Vật lý" [ref=f2e96]
+                - generic [ref=f2e97]: Vật lý
+              - generic [ref=f2e98] [cursor=pointer]:
+                - checkbox "Tiếng Anh" [ref=f2e99]
+                - generic [ref=f2e100]: Tiếng Anh
+              - generic [ref=f2e101] [cursor=pointer]:
+                - checkbox "IELTS" [ref=f2e102]
+                - generic [ref=f2e103]: IELTS
+              - generic [ref=f2e104] [cursor=pointer]:
+                - checkbox "Ngữ văn" [ref=f2e105]
+                - generic [ref=f2e106]: Ngữ văn
+              - generic [ref=f2e107] [cursor=pointer]:
+                - checkbox "Hóa học" [ref=f2e108]
+                - generic [ref=f2e109]: Hóa học
+            - group "Khu vực" [ref=f2e110]:
+              - generic [ref=f2e112] [cursor=pointer]:
+                - checkbox "Bình Thạnh" [ref=f2e113]
+                - generic [ref=f2e114]: Bình Thạnh
+              - generic [ref=f2e115] [cursor=pointer]:
+                - checkbox "Thủ Đức" [ref=f2e116]
+                - generic [ref=f2e117]: Thủ Đức
+              - generic [ref=f2e118] [cursor=pointer]:
+                - checkbox "Quận 3" [ref=f2e119]
+                - generic [ref=f2e120]: Quận 3
+              - generic [ref=f2e121] [cursor=pointer]:
+                - checkbox "Phú Nhuận" [ref=f2e122]
+                - generic [ref=f2e123]: Phú Nhuận
+            - group "Thời gian rảnh" [ref=f2e124]:
+              - generic [ref=f2e126] [cursor=pointer]:
+                - checkbox "Buổi sáng" [ref=f2e127]
+                - generic [ref=f2e128]: Buổi sáng
+              - generic [ref=f2e129] [cursor=pointer]:
+                - checkbox "Buổi chiều" [ref=f2e130]
+                - generic [ref=f2e131]: Buổi chiều
+              - generic [ref=f2e132] [cursor=pointer]:
+                - checkbox "Buổi tối" [ref=f2e133]
+                - generic [ref=f2e134]: Buổi tối
+              - generic [ref=f2e135] [cursor=pointer]:
+                - checkbox "Cuối tuần" [ref=f2e136]
+                - generic [ref=f2e137]: Cuối tuần
+            - generic [ref=f2e138]:
+              - generic [ref=f2e139]: Bán kính tìm kiếm
+              - combobox "Bán kính tìm kiếm" [ref=f2e140] [cursor=pointer]:
+                - option "Tất cả khoảng cách" [selected]
+                - option "Trong bán kính 3 km"
+                - option "Trong bán kính 5 km"
+                - option "Trong bán kính 10 km"
+            - generic [ref=f2e141]:
+              - generic [ref=f2e142]: Học phí tối đa
+              - combobox "Học phí tối đa" [ref=f2e143] [cursor=pointer]:
+                - option "Không giới hạn" [selected]
+                - option "Tối đa 160.000đ / buổi"
+                - option "Tối đa 180.000đ / buổi"
+                - option "Tối đa 200.000đ / buổi"
+            - button "Xóa bộ lọc" [ref=f2e144] [cursor=pointer]
+            - button "Xem 6 gia sư" [ref=f2e145] [cursor=pointer]
+          - region "Kết quả tìm gia sư" [ref=f2e146]:
+            - generic [ref=f2e147]:
+              - generic [ref=f2e148]:
+                - strong [ref=f2e149]: 6 gia sư phù hợp
+                - text: tại TP. Hồ Chí Minh
+              - generic [ref=f2e150]:
+                - group "Chế độ hiển thị" [ref=f2e151]:
+                  - button "Danh sách" [pressed] [ref=f2e152] [cursor=pointer]
+                  - button "Bản đồ chia đôi" [ref=f2e156] [cursor=pointer]
+                - button "Bộ lọc" [ref=f2e159] [cursor=pointer]
+                - generic [ref=f2e161]: Sắp xếp
+                - combobox "Sắp xếp" [ref=f2e162] [cursor=pointer]:
+                  - option "Đề xuất" [selected]
+                  - option "Đánh giá cao"
+                  - option "Học phí thấp"
+            - generic [ref=f2e163]:
+              - article [ref=f2e164]:
+                - generic [ref=f2e165]:
+                  - img "Ảnh đại diện của Nguyễn Mai Anh" [ref=f2e166]:
+                    - generic [aria-hidden] [ref=f2e167]: MA
+                  - generic [ref=f2e168]:
+                    - generic [ref=f2e169]: Gia sư nổi bật
+                    - heading "Nguyễn Mai Anh" [level=3] [ref=f2e170]
+                    - paragraph [ref=f2e171]: ĐH Khoa học Tự nhiên
+                  - button "Lưu Nguyễn Mai Anh" [ref=f2e172] [cursor=pointer]
+                - generic [ref=f2e175]:
+                  - generic [ref=f2e176]:
+                    - strong [ref=f2e179]: "4.9"
+                    - generic [ref=f2e180]: (48 đánh giá)
+                  - generic [ref=f2e181]: Đã xác minh
+                - paragraph [ref=f2e185]: Giúp học sinh xây nền tảng vững chắc qua cách giải thích gần gũi và lộ trình học rõ ràng.
+                - generic "Môn dạy" [ref=f2e186]:
+                  - generic [ref=f2e187]: Toán
+                  - generic [ref=f2e188]: Vật lý
+                - generic [ref=f2e189]:
+                  - generic [ref=f2e190]: Bình Thạnh
+                  - generic [ref=f2e194]: 17:00–21:00 · 09:00–12:00
+                - generic [ref=f2e198]:
+                  - generic [ref=f2e199]:
+                    - strong [ref=f2e200]: 180.000đ
+                    - generic [ref=f2e201]: / buổi
+                  - link "Xem hồ sơ" [ref=f2e202] [cursor=pointer]:
+                    - /url: /tutors/mai-anh
+              - article [ref=f2e206]:
+                - generic [ref=f2e207]:
+                  - img "Ảnh đại diện của Trần Gia Bảo" [ref=f2e208]:
+                    - generic [aria-hidden] [ref=f2e209]: GB
+                  - generic [ref=f2e210]:
+                    - heading "Trần Gia Bảo" [level=3] [ref=f2e211]
+                    - paragraph [ref=f2e212]: ĐH Ngoại thương
+                  - button "Lưu Trần Gia Bảo" [ref=f2e213] [cursor=pointer]
+                - generic [ref=f2e216]:
+                  - generic [ref=f2e217]:
+                    - strong [ref=f2e220]: "4.9"
+                    - generic [ref=f2e221]: (36 đánh giá)
+                  - generic [ref=f2e222]: Đã xác minh
+                - generic "Môn dạy" [ref=f2e226]:
+                  - generic [ref=f2e227]: Tiếng Anh
+                  - generic [ref=f2e228]: IELTS
+                - generic [ref=f2e229]:
+                  - generic [ref=f2e230]: Thủ Đức
+                  - generic [ref=f2e234]: 18:00–21:00 · 09:00–12:00
+                - generic [ref=f2e238]:
+                  - generic [ref=f2e239]:
+                    - strong [ref=f2e240]: 220.000đ
+                    - generic [ref=f2e241]: / buổi
+                  - link "Xem hồ sơ" [ref=f2e242] [cursor=pointer]:
+                    - /url: /tutors/quoc-bao
+              - article [ref=f2e246]:
+                - generic [ref=f2e247]:
+                  - img "Ảnh đại diện của Phạm Hà Linh" [ref=f2e248]:
+                    - generic [aria-hidden] [ref=f2e249]: HL
+                  - generic [ref=f2e250]:
+                    - heading "Phạm Hà Linh" [level=3] [ref=f2e251]
+                    - paragraph [ref=f2e252]: ĐH Sư phạm TP.HCM
+                  - button "Lưu Phạm Hà Linh" [ref=f2e253] [cursor=pointer]
+                - generic [ref=f2e256]:
+                  - generic [ref=f2e257]:
+                    - strong [ref=f2e260]: "4.8"
+                    - generic [ref=f2e261]: (29 đánh giá)
+                  - generic [ref=f2e262]: Đã xác minh
+                - generic "Môn dạy" [ref=f2e266]:
+                  - generic [ref=f2e267]: Ngữ văn
+                  - generic [ref=f2e268]: Tiếng Anh
+                - generic [ref=f2e269]:
+                  - generic [ref=f2e270]: Quận 3
+                  - generic [ref=f2e274]: 13:00–17:00 · 09:00–12:00
+                - generic [ref=f2e278]:
+                  - generic [ref=f2e279]:
+                    - strong [ref=f2e280]: 160.000đ
+                    - generic [ref=f2e281]: / buổi
+                  - link "Xem hồ sơ" [ref=f2e282] [cursor=pointer]:
+                    - /url: /tutors/ha-linh
+              - article [ref=f2e286]:
+                - generic [ref=f2e287]:
+                  - img "Ảnh đại diện của Lê Đức Minh" [ref=f2e288]:
+                    - generic [aria-hidden] [ref=f2e289]: ĐM
+                  - generic [ref=f2e290]:
+                    - heading "Lê Đức Minh" [level=3] [ref=f2e291]
+                    - paragraph [ref=f2e292]: ĐH Bách khoa TP.HCM
+                  - button "Lưu Lê Đức Minh" [ref=f2e293] [cursor=pointer]
+                - generic [ref=f2e296]:
+                  - generic [ref=f2e297]:
+                    - strong [ref=f2e300]: "4.8"
+                    - generic [ref=f2e301]: (31 đánh giá)
+                  - generic [ref=f2e302]: Đã xác minh
+                - generic "Môn dạy" [ref=f2e306]:
+                  - generic [ref=f2e307]: Toán
+                  - generic [ref=f2e308]: Hóa học
+                - generic [ref=f2e309]:
+                  - generic [ref=f2e310]: Phú Nhuận
+                  - generic [ref=f2e314]: 17:00–21:00 · 13:00–17:00
+                - generic [ref=f2e318]:
+                  - generic [ref=f2e319]:
+                    - strong [ref=f2e320]: 170.000đ
+                    - generic [ref=f2e321]: / buổi
+                  - link "Xem hồ sơ" [ref=f2e322] [cursor=pointer]:
+                    - /url: /tutors/duc-minh
+              - article [ref=f2e326]:
+                - generic [ref=f2e327]:
+                  - img "Ảnh đại diện của Võ Thu Trang" [ref=f2e328]:
+                    - generic [aria-hidden] [ref=f2e329]: TT
+                  - generic [ref=f2e330]:
+                    - heading "Võ Thu Trang" [level=3] [ref=f2e331]
+                    - paragraph [ref=f2e332]: ĐH Sư phạm TP.HCM
+                  - button "Lưu Võ Thu Trang" [ref=f2e333] [cursor=pointer]
+                - generic [ref=f2e336]:
+                  - generic [ref=f2e337]:
+                    - strong [ref=f2e340]: "4.7"
+                    - generic [ref=f2e341]: (22 đánh giá)
+                  - generic [ref=f2e342]: Đã xác minh
+                - generic "Môn dạy" [ref=f2e346]:
+                  - generic [ref=f2e347]: Tiếng Anh
+                  - generic [ref=f2e348]: Ngữ văn
+                - generic [ref=f2e349]:
+                  - generic [ref=f2e350]: Bình Thạnh
+                  - generic [ref=f2e354]: 08:00–12:00
+                - generic [ref=f2e358]:
+                  - generic [ref=f2e359]:
+                    - strong [ref=f2e360]: 190.000đ
+                    - generic [ref=f2e361]: / buổi
+                  - link "Xem hồ sơ" [ref=f2e362] [cursor=pointer]:
+                    - /url: /tutors/thu-trang
+              - article [ref=f2e366]:
+                - generic [ref=f2e367]:
+                  - img "Ảnh đại diện của Đặng Gia Huy" [ref=f2e368]:
+                    - generic [aria-hidden] [ref=f2e369]: GH
+                  - generic [ref=f2e370]:
+                    - heading "Đặng Gia Huy" [level=3] [ref=f2e371]
+                    - paragraph [ref=f2e372]: ĐH Khoa học Tự nhiên
+                  - button "Lưu Đặng Gia Huy" [ref=f2e373] [cursor=pointer]
+                - generic [ref=f2e377]:
+                  - strong [ref=f2e380]: "4.7"
+                  - generic [ref=f2e381]: (18 đánh giá)
+                - generic "Môn dạy" [ref=f2e382]:
+                  - generic [ref=f2e383]: Vật lý
+                  - generic [ref=f2e384]: Toán
+                - generic [ref=f2e385]:
+                  - generic [ref=f2e386]: Thủ Đức
+                  - generic [ref=f2e390]: 19:00–21:00
+                - generic [ref=f2e394]:
+                  - generic [ref=f2e395]:
+                    - strong [ref=f2e396]: 150.000đ
+                    - generic [ref=f2e397]: / buổi
+                  - link "Xem hồ sơ" [ref=f2e398] [cursor=pointer]:
+                    - /url: /tutors/gia-huy
+          - complementary "Thông tin hỗ trợ" [ref=f2e402]:
+            - link [ref=f2e403] [cursor=pointer]:
+              - /url: /learner/map
+              - text: KHÁM PHÁ KHU VỰC
+              - heading "Bản đồ gia sư gần bạn" [level=3] [ref=f2e404]
+              - img "Bản đồ minh họa khu vực gia sư" [ref=f2e405]:
+                - generic [ref=f2e409]:
+                  - generic [ref=f2e410]: PHÚ NHUẬN
+                  - generic [ref=f2e411]: BÌNH THẠNH
+                  - generic [ref=f2e412]: THỦ ĐỨC
+                  - generic [ref=f2e413]: QUẬN 3
+                - generic [ref=f2e414]: MA
+                - generic [ref=f2e416]: GB
+                - generic [ref=f2e418]: HL
+                - generic [ref=f2e420]: ĐM
+                - generic [ref=f2e422]: TT
+                - generic [ref=f2e424]: GH
+                - generic [ref=f2e426]: TV
+                - generic [ref=f2e428]: HP
+                - generic [ref=f2e430]: MC
+                - generic [ref=f2e432]: TA
+                - generic [ref=f2e434]: QH
+              - paragraph [ref=f2e436]: Xem khu vực và khoảng cách giữa các gia sư.
+              - generic [ref=f2e437]: Mở bản đồ
+            - generic [ref=f2e440]:
+              - text: BẮT ĐẦU ĐƠN GIẢN
+              - heading "Ba bước để bắt đầu" [level=3] [ref=f2e441]
+              - list [ref=f2e442]:
+                - listitem [ref=f2e443]:
+                  - generic [ref=f2e444]: "01"
+                  - text: Chọn môn và khu vực
+                - listitem [ref=f2e445]:
+                  - generic [ref=f2e446]: "02"
+                  - text: So sánh hồ sơ gia sư
+                - listitem [ref=f2e447]:
+                  - generic [ref=f2e448]: "03"
+                  - text: Gửi yêu cầu học phù hợp
+            - paragraph [ref=f2e453]:
+              - strong [ref=f2e454]: Thông tin minh bạch
+              - text: Bạn luôn thấy mức phí và lịch rảnh trước khi quyết định.
+    - contentinfo [ref=f2e455]:
+      - generic [ref=f2e456]:
+        - link "TutorNearMe — trang chủ" [ref=f2e457] [cursor=pointer]:
+          - /url: /
+          - generic [aria-hidden] [ref=f2e458]: TN
+          - generic [ref=f2e459]: TutorNearMe
+        - paragraph [ref=f2e460]: Kết nối đúng người. Học theo cách của bạn.
+        - generic [ref=f2e461]: Giao diện mẫu · TutorNearMe
+  - complementary "Widget nhắn tin nhanh" [ref=f2e462]:
+    - button "Mở cửa sổ trò chuyện" [ref=f2e463] [cursor=pointer]:
+      - generic [ref=f2e466]: "1"
+```

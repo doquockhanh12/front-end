@@ -1,0 +1,144 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: completion-tutor-audit.spec.js >> UI-COMP-T01 Tutor Wallet resolves the canonical account balance
+- Location: tests\e2e\completion-tutor-audit.spec.js:8:1
+
+# Error details
+
+```
+Error: expect(locator).toHaveText(expected) failed
+
+Locator:  locator('.wallet-card--available .wallet-card-amount')
+Expected: "1.250.000 đ"
+Received: "0 đ"
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveText" locator('.wallet-card--available .wallet-card-amount') with timeout 5000ms
+  - waiting for locator('.wallet-card--available .wallet-card-amount')
+    11 × locator resolved to <div class="wallet-card-amount">0 đ</div>
+       - unexpected value "0 đ"
+
+```
+
+```yaml
+- text: 0 đ
+```
+
+# Test source
+
+```ts
+  1   | import { test, expect } from '@playwright/test';
+  2   | import { createDemoState, holdEscrowDeposit, DOMAIN_STORAGE_KEY } from '../../src/features/domain/demoDomain.js';
+  3   | import { resetDemo, login, fixedTime } from './demoHelpers.js';
+  4   | 
+  5   | const seed = () => createDemoState(fixedTime);
+  6   | const withdrawal = page => page.getByRole('button', { name: 'Rút tiền về STK Ngân hàng', exact: true });
+  7   | 
+  8   | test('UI-COMP-T01 Tutor Wallet resolves the canonical account balance', async ({ page }) => {
+  9   |   const state = seed();
+  10  |   await resetDemo(page, { state });
+  11  |   await login(page, 'giabao', '/tutor/wallet');
+> 12  |   await expect(page.locator('.wallet-card--available .wallet-card-amount')).toHaveText(`${state.wallets['demo-tutor'].availableBalance.toLocaleString('vi-VN')} đ`);
+      |                                                                             ^ Error: expect(locator).toHaveText(expected) failed
+  13  |   await expect(withdrawal(page)).toBeEnabled();
+  14  | });
+  15  | 
+  16  | // Controlled compatibility state isolates modal behavior from T01. Both stable
+  17  | // identity keys reference existing approved wallet data; the fixture is untouched.
+  18  | async function openPayout(page) {
+  19  |   const state = seed();
+  20  |   state.wallets['quoc-bao'] = structuredClone(state.wallets['demo-tutor']);
+  21  |   await resetDemo(page, { state });
+  22  |   await login(page, 'giabao', '/tutor/wallet');
+  23  |   await withdrawal(page).click();
+  24  |   const dialog = page.getByRole('dialog', { name: 'Rút tiền về tài khoản ngân hàng' });
+  25  |   await expect(dialog).toBeVisible();
+  26  |   return dialog;
+  27  | }
+  28  | 
+  29  | test('UI-COMP-T02 payout dialog receives keyboard focus', async ({ page }) => {
+  30  |   const dialog = await openPayout(page);
+  31  |   expect(await dialog.evaluate(el => el.contains(document.activeElement))).toBe(true);
+  32  | });
+  33  | 
+  34  | test('UI-COMP-T02 Escape closes payout dialog and returns focus', async ({ page }) => {
+  35  |   const dialog = await openPayout(page);
+  36  |   await page.keyboard.press('Escape');
+  37  |   await expect(dialog).toHaveCount(0);
+  38  |   await expect(withdrawal(page)).toBeFocused();
+  39  | });
+  40  | 
+  41  | test('UI-COMP-T03 payout bank account input has an associated visible label', async ({ page }) => {
+  42  |   const dialog = await openPayout(page);
+  43  |   await expect(dialog.getByRole('textbox', { name: 'Số tài khoản ngân hàng:' })).toBeVisible();
+  44  | });
+  45  | 
+  46  | test('UI-COMP-T04 accidental click does not activate the three-second SOS action', async ({ page }) => {
+  47  |   await resetDemo(page);
+  48  |   await login(page, 'giabao', '/tutor/timetable');
+  49  |   await page.getByRole('button', { name: 'SOS KHẨN CẤP', exact: true }).first().click();
+  50  |   await expect(page.getByRole('alertdialog')).toHaveCount(0);
+  51  | });
+  52  | 
+  53  | test('UI-COMP-T05 SOS explicitly discloses local simulation instead of claiming real SMS or GPS delivery', async ({ page }) => {
+  54  |   await resetDemo(page);
+  55  |   await login(page, 'giabao', '/tutor/timetable');
+  56  |   // Holding also remains valid when the planned activation guard is implemented.
+  57  |   const trigger = page.getByRole('button', { name: 'SOS KHẨN CẤP', exact: true }).first();
+  58  |   await trigger.hover(); await page.mouse.down();
+  59  |   await page.clock.runFor(3100); await page.mouse.up();
+  60  |   const dialog = page.getByRole('alertdialog');
+  61  |   await expect(dialog).toBeVisible();
+  62  |   await expect(dialog).toContainText(/mô phỏng|demo|không gửi/i);
+  63  | });
+  64  | 
+  65  | test('UI-COMP-T06 another Tutor cannot see canonical Tutor private applications', async ({ page }) => {
+  66  |   const state = seed();
+  67  |   const user = state.users.find(u => u.role === 'tutor' && u.id !== 'demo-tutor');
+  68  |   expect(user).toBeTruthy();
+  69  |   await resetDemo(page, { state, user });
+  70  |   await page.goto('/tutor/find-students');
+  71  |   await page.getByRole('button', { name: /Đơn ứng tuyển của tôi/ }).click();
+  72  |   await expect(page.locator('.my-proposal-card')).toHaveCount(state.proposals.filter(p => p.tutorId === user.id).length);
+  73  | });
+  74  | 
+  75  | test('UI-COMP-T07 another Tutor cannot read canonical Tutor private notifications', async ({ page }) => {
+  76  |   const state = seed();
+  77  |   const user = state.users.find(u => u.role === 'tutor' && u.id !== 'demo-tutor');
+  78  |   expect(user).toBeTruthy();
+  79  |   await resetDemo(page, { state, user });
+  80  |   await page.goto('/tutor/dashboard');
+  81  |   await page.getByRole('button', { name: 'Thông báo', exact: true }).click();
+  82  |   for (const notification of state.notifications.filter(n => n.recipientId === 'demo-tutor')) {
+  83  |     await expect(page.getByText(notification.message, { exact: true })).toHaveCount(0);
+  84  |   }
+  85  | });
+  86  | 
+  87  | test('UI-COMP-T08 completing a funded Lesson disburses its linked escrow exactly once', async ({ page }) => {
+  88  |   const state = seed(); const lesson = state.lessons.find(l => l.id === 'seed-0');
+  89  |   const funded = holdEscrowDeposit(state, {
+  90  |     learnerId: 'demo-learner', tutorId: 'demo-tutor', lessonId: lesson.id,
+  91  |     amount: lesson.sessionFee, subject: lesson.subject, sessionCount: 1, feePerSession: lesson.sessionFee,
+  92  |   });
+  93  |   expect(funded.error).toBeFalsy();
+  94  |   const linked = funded.state.escrowTransactions.find(e => e.lessonId === lesson.id);
+  95  |   expect(linked).toBeTruthy();
+  96  |   await resetDemo(page, { state: funded.state });
+  97  |   await login(page, 'giabao', '/tutor/timetable');
+  98  |   await page.getByRole('button', { name: new RegExp(`${lesson.subject}.*${lesson.learner}`) }).click();
+  99  |   const dialog = page.getByRole('dialog', { name: 'Chi tiết lớp học' });
+  100 |   await dialog.getByRole('button', { name: 'Đánh dấu hoàn tất' }).click();
+  101 |   await expect(dialog).toContainText('Hoàn tất');
+  102 |   const after = await page.evaluate(key => JSON.parse(localStorage.getItem(key)), DOMAIN_STORAGE_KEY);
+  103 |   expect(after.escrowTransactions.find(e => e.id === linked.id).status).toBe('disbursed');
+  104 |   expect(after.wallets['demo-tutor'].ledger.filter(tx => tx.type === 'lesson_disbursed' && tx.escrowId === linked.id)).toHaveLength(1);
+  105 | });
+  106 | 
+```

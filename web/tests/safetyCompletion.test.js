@@ -1,0 +1,26 @@
+import test from 'node:test';
+import assert from 'node:assert/strict';
+import { createDemoState } from '../src/features/domain/demoDomain.js';
+import { reportSuspiciousClass } from '../src/features/domain/learning.js';
+const now = new Date('2026-10-05T08:00:00+07:00');
+test('MASTER safety report links actual class and both accounts, deduplicates and never declares guilt', () => {
+  const state = createDemoState(now), tutor = state.users.find(u => u.id === 'demo-tutor');
+  const post = state.classPosts.find(p => p.moderationStatus === 'approved' && p.status === 'open');
+  const values = { classPostId: post.id, reason: 'Địa chỉ và thông tin lớp cần được Admin đối chiếu trước khi nhận lớp.' };
+  assert.ok(reportSuspiciousClass(state, { ...tutor, role: 'learner' }, values, now).error);
+  assert.ok(reportSuspiciousClass(state, tutor, { ...values, reason: '' }, now).error);
+  assert.ok(reportSuspiciousClass(state, tutor, { classPostId: post.id }, now).error);
+  const result = reportSuspiciousClass(state, tutor, values, now);
+  assert.ok(result.ok, result.error);
+  const issue = result.state.issues.find(i => i.id === result.issueId);
+  assert.equal(issue.relatedClassPostId, post.id);
+  assert.equal(issue.reportedBy.id, tutor.id);
+  assert.equal(issue.targetUserId, post.learnerId);
+  assert.equal(issue.status, 'new');
+  assert.deepEqual(result.state.users, state.users);
+  assert.deepEqual(result.state.classPosts, state.classPosts);
+  assert.equal(result.state.notifications[0].recipientId, state.users.find(u => u.role === 'admin').id);
+  const repeated = reportSuspiciousClass(result.state, tutor, values, now);
+  assert.equal(repeated.issueId, result.issueId);
+  assert.equal(repeated.state.issues.length, result.state.issues.length);
+});

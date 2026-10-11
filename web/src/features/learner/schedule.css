@@ -1,0 +1,340 @@
+/* Learner Schedule Styles */
+.learner-schedule-page {
+  padding-bottom: var(--space-12);
+}
+
+.schedule-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--space-4);
+  margin-bottom: var(--space-6);
+}
+
+.schedule-view-toggles {
+  display: flex;
+  background: #f1f5f9;
+  border-radius: 12px;
+  padding: 4px;
+  gap: 4px;
+}
+
+.schedule-toggle-btn {
+  border: none;
+  background: transparent;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: var(--text-compact);
+  font-weight: 700;
+  color: var(--text-muted);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.15s ease;
+}
+
+.schedule-toggle-btn.is-active {
+  background: white;
+  color: var(--brand-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Week Navigator */
+.week-nav-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border: 1px solid var(--border-default-color);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  margin-bottom: var(--space-6);
+}
+
+.week-nav-arrows {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.week-nav-label {
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--text-primary);
+}
+
+/* Weekly Grid */
+.week-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 12px;
+  margin-bottom: var(--space-8);
+  overflow-x: auto;
+}
+
+@media (max-width: 900px) {
+  .week-grid {
+    grid-template-columns: repeat(7, minmax(130px, 1fr));
+  }
+}
+
+.week-day-col {
+  background: white;
+  border: 1px solid var(--border-default-color);
+  border-radius: 12px;
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+}
+
+.week-day-head {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #f1f5f9;
+  background: #f8fafc;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.week-day-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.week-day-date {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+}
+
+.week-day-lessons {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.week-lesson-card {
+  background: #eef4ff;
+  border-left: 3px solid var(--brand-primary);
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.week-lesson-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(19, 70, 160, 0.12);
+}
+
+.week-lesson-card--completed {
+  background: #f0fdf4;
+  border-left-color: var(--status-success);
+}
+
+.week-lesson-card--cancelled {
+  background: #fef2f2;
+  border-left-color: var(--brand-accent-red);
+  opacity: 0.7;
+}
+
+.week-lesson-subject {
+  font-weight: 800;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.week-lesson-time {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* List View */
+.lesson-list {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.lesson-card {
+  background: white;
+  border: 1px solid var(--border-default-color);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  box-shadow: 0 4px 14px rgba(24, 33, 59, 0.03);
+  transition: border-color 0.15s ease;
+}
+
+.lesson-card:hover {
+  border-color: var(--brand-primary);
+}
+
+.lesson-card-main {
+  display: flex;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.lesson-date-box {
+  background: #eff6ff;
+  border-radius: 12px;
+  padding: 10px 14px;
+  text-align: center;
+  min-width: 75px;
+}
+
+.lesson-date-box strong {
+  display: block;
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--brand-primary);
+}
+
+.lesson-date-box span {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.lesson-info-title {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  margin: 0 0 4px;
+}
+
+.lesson-info-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  color: var(--text-muted);
+  font-size: 0.88rem;
+}
+
+.lesson-card-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.btn-online-room {
+  background: #10b981;
+  color: white;
+  border: none;
+  border-radius: 9px;
+  padding: 9px 16px;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.25);
+  transition: all 0.15s ease;
+}
+
+.btn-online-room:hover {
+  background: #059669;
+  transform: translateY(-1px);
+}
+
+/* Lesson Detail Modal */
+.lesson-modal-dialog {
+  background: white;
+  border-radius: 18px;
+  width: min(650px, 100%);
+  max-height: calc(100dvh - var(--space-8));
+  overflow-y: auto;
+  padding: var(--space-6);
+  position: relative;
+}
+
+.lesson-modal-header {
+  border-bottom: 1px solid var(--border-default-color);
+  padding-bottom: var(--space-4);
+  margin-bottom: var(--space-4);
+}
+
+.lesson-refund-label { display: block; margin-top: var(--space-3); margin-bottom: var(--space-1); font-weight: 700; }
+.lesson-modal-dialog #lesson-refund-reason { width: 100%; }
+.one-click-refund-btn:disabled { opacity: .55; cursor: not-allowed; }
+
+.lesson-section-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: var(--space-4);
+}
+
+.lesson-section-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+}
+
+.penalty-calculator-box {
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 10px;
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 0.88rem;
+}
+
+.penalty-rule-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px dashed #fde68a;
+}
+
+.penalty-rule-item.is-current {
+  font-weight: 800;
+  color: #b45309;
+}
+
+.one-click-refund-btn {
+  background: #fef2f2;
+  border: 1px solid #fecaca;
+  color: #b91c1c;
+  font-weight: 700;
+  border-radius: 9px;
+  padding: 10px 14px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.15s;
+}
+
+.one-click-refund-btn:hover {
+  background: #fee2e2;
+}
+/* Lesson attachments and follow-up controls remain readable in the dialog. */
+.lesson-material-row { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.lesson-material-row strong { min-width: 0; overflow-wrap: anywhere; }
+.lesson-homework-label { display: grid; gap: 8px; }
+.lesson-homework-label input { width: 100%; min-width: 0; }
+.lesson-section-box > label { display: block; margin-block: 12px 6px; }
+.lesson-section-box > select, .lesson-section-box > textarea { width: 100%; margin-bottom: 12px; }

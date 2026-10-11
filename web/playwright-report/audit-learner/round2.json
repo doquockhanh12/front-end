@@ -1,0 +1,350 @@
+[
+  {
+    "width": 1440,
+    "name": "request-demo-01",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1440
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1440,
+    "name": "request-demo-02",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1440
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1440,
+    "name": "request-demo-03",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1440
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1440,
+    "name": "comparison",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1440
+    },
+    "dialogs": 1
+  },
+  {
+    "width": 1440,
+    "name": "comparison-bottom",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1440
+    },
+    "dialogs": 1
+  },
+  {
+    "width": 1440,
+    "name": "post-step2",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [],
+      "width": 1440
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1440,
+    "name": "post-step3",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [],
+      "width": 1440
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1440,
+    "name": "schedule-week",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1440
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1440,
+    "name": "lesson-modal",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1440
+    },
+    "dialogs": 1
+  },
+  {
+    "width": 1440,
+    "name": "lesson-modal-bottom",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1440
+    },
+    "dialogs": 1
+  },
+  {
+    "width": 1024,
+    "name": "request-demo-01",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1024
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1024,
+    "name": "request-demo-02",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1024
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1024,
+    "name": "request-demo-03",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1024
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1024,
+    "name": "comparison",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1024
+    },
+    "dialogs": 1
+  },
+  {
+    "width": 1024,
+    "name": "comparison-bottom",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1024
+    },
+    "dialogs": 1
+  },
+  {
+    "width": 1024,
+    "name": "post-step2",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [],
+      "width": 1024
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1024,
+    "name": "post-step3",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [],
+      "width": 1024
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1024,
+    "name": "schedule-week",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1024
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 1024,
+    "name": "lesson-modal",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1024
+    },
+    "dialogs": 1
+  },
+  {
+    "width": 1024,
+    "name": "lesson-modal-bottom",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 1024
+    },
+    "dialogs": 1
+  },
+  {
+    "width": 390,
+    "name": "request-demo-01",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 390
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 390,
+    "name": "request-demo-02",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 390
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 390,
+    "name": "request-demo-03",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 390
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 390,
+    "name": "comparison",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 390
+    },
+    "dialogs": 1
+  },
+  {
+    "width": 390,
+    "name": "comparison-bottom",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 390
+    },
+    "dialogs": 1
+  },
+  {
+    "width": 390,
+    "name": "post-step2",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [],
+      "width": 390
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 390,
+    "name": "post-step3",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [],
+      "width": 390
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 390,
+    "name": "schedule-week",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 390
+    },
+    "dialogs": 0
+  },
+  {
+    "width": 390,
+    "name": "lesson-modal",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 390
+    },
+    "dialogs": 1
+  },
+  {
+    "width": 390,
+    "name": "lesson-modal-bottom",
+    "font": {
+      "body": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "heading": [
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ],
+      "width": 390
+    },
+    "dialogs": 1
+  }
+]

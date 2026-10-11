@@ -1,0 +1,275 @@
+[
+  {
+    "width": 1440,
+    "route": "/",
+    "errors": [],
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/learner",
+    "errors": [],
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/tutor",
+    "errors": [],
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/login",
+    "errors": [],
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/register",
+    "errors": [],
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/tutor/register",
+    "errors": [],
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1440,
+    "route": "/help",
+    "errors": [],
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "sans-serif",
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "route": "/",
+    "errors": [],
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "route": "/learner",
+    "errors": [],
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "route": "/tutor",
+    "errors": [],
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "route": "/login",
+    "errors": [],
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "route": "/register",
+    "errors": [],
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "route": "/tutor/register",
+    "errors": [],
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 1024,
+    "route": "/help",
+    "errors": [],
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "sans-serif",
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "route": "/",
+    "errors": [],
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "route": "/learner",
+    "errors": [],
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "route": "/tutor",
+    "errors": [],
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "route": "/login",
+    "errors": [],
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "route": "/register",
+    "errors": [],
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "route": "/tutor/register",
+    "errors": [],
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+        "Nunito, \"Nunito Sans\", sans-serif"
+      ]
+    }
+  },
+  {
+    "width": 390,
+    "route": "/help",
+    "errors": [],
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "sans-serif",
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ]
+    }
+  }
+]

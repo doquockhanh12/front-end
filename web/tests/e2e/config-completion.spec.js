@@ -1,0 +1,43 @@
+import { test, expect } from '@playwright/test';
+import { createDemoState } from '../../src/features/domain/demoDomain.js';
+import { resetDemo } from './demoHelpers.js';
+for (const width of [1440, 390]) test(`Tutor registration uses active Admin subject/duration configuration at ${width}px`, async ({ page }) => {
+  const state = createDemoState(new Date('2026-10-05T06:00:00+07:00'));
+  state.subjects = state.subjects.map(row => row.name === 'Tiếng Anh' ? { ...row, isActive: false } : row);
+  state.subjects.push({ id: 'test-subject', name: 'Kỹ năng tư duy', isActive: true });
+  state.systemSettings = { ...state.systemSettings, sessionDurations: [90], defaultSessionDuration: 90 };
+  await resetDemo(page, { state }); await page.setViewportSize({ width, height: 900 });
+  await page.goto('/tutor/register?redirect=%2Ftutor%2Fprofile');
+  await expect(page.getByRole('checkbox', { name: 'Tiếng Anh', exact: true })).toHaveCount(0);
+  await expect(page.getByRole('checkbox', { name: 'Kỹ năng tư duy', exact: true })).toBeVisible();
+  await expect(page.getByRole('checkbox', { name: 'SAT', exact: true })).toBeVisible();
+  await expect(page.getByLabel('Thời lượng buổi học', { exact: true })).toHaveValue('90');
+  await expect(page.getByLabel('Thời lượng buổi học', { exact: true }).locator('option')).toHaveCount(1);
+  await expect(page.locator('.auth-form__foot').getByRole('link', { name: 'Đăng nhập', exact: true })).toHaveAttribute('href', /redirect=%2Ftutor%2Fprofile/);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= window.innerWidth)).toBe(true);
+  await page.screenshot({ path: `test-results/config-completion/registration-${width}.png`, fullPage: true });
+});
+test('Admin review moderation records actor and target in persisted audit log', async ({ page }) => {
+  await resetDemo(page);
+  await page.goto('/login?redirect=%2Fadmin%2Freviews');
+  await page.getByLabel('Username / Email / Số điện thoại *').fill('admin');
+  await page.getByLabel('Mật khẩu *', { exact: true }).fill('demo1234');
+  await page.getByRole('button', { name: 'Đăng nhập', exact: true }).click();
+  await expect(page).toHaveURL(/admin\/reviews$/);
+  const button = page.getByRole('button', { name: /^Ẩn đánh giá / }).first();
+  const label = await button.getAttribute('aria-label');
+  await button.click();
+  await expect.poll(async () => page.evaluate(target => JSON.parse(localStorage.getItem('tnm.demo.domain.v1')).auditLogs.some(log => log.actorId === 'demo-admin' && log.targetId === target && log.action === 'HIDE_REVIEW'), label.replace('Ẩn đánh giá ', ''))).toBe(true);
+});
+test('Canonical Tutor proposal does not claim Top-Rated with unknown punctuality', async ({ page }) => {
+  await resetDemo(page);
+  await page.goto('/login?redirect=%2Flearner%2Fmy-classes');
+  await page.getByLabel('Username / Email / Số điện thoại *').fill('minhanh');
+  await page.getByLabel('Mật khẩu *', { exact: true }).fill('demo1234');
+  await page.getByRole('button', { name: 'Đăng nhập', exact: true }).click();
+  await expect(page).toHaveURL(/learner\/my-classes$/);
+  const card = page.locator('.myclass-proposal-card').filter({ hasText: 'Trần Gia Bảo' }).first();
+  await expect(card).toBeVisible();
+  await expect(card).toContainText('Chưa có dữ liệu');
+  await expect(card).not.toContainText('Top-Rated');
+});

@@ -1,0 +1,7 @@
+.help-center h1,.help-center h2,.help-center h3 { font-family:var(--font-display); }
+.help-center input:focus-visible { outline:3px solid var(--brand-accent-cyan); outline-offset:3px; }
+.help-center > header { flex-wrap:wrap; gap:var(--space-3); }
+.help-center > header > div { flex-wrap:wrap; }
+.help-center h1 { font-size:clamp(26px,4vw,36px)!important; }
+.help-center button svg { flex-shrink:0; }
+@media(max-width:767px){.help-center > header { padding:var(--space-4)!important; }.help-center main { padding-inline:var(--space-4)!important; }.help-center main button { gap:var(--space-3); } }

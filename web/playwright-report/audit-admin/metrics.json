@@ -1,0 +1,1238 @@
+{
+  "results": [
+    {
+      "route": "dashboard",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Tổng quan hệ thống"
+      ],
+      "controls": [
+        {
+          "type": "select-one",
+          "name": "Trạng thái"
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "users",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Người dùng"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm người dùng",
+          "placeholder": "Tìm theo tên, username, email, SĐT..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "tutors",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Gia sư"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm gia sư",
+          "placeholder": "Tìm theo tên, trường, môn dạy..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "reviews",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Kiểm duyệt Đánh giá"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm đánh giá",
+          "placeholder": "Tìm theo người đánh giá, gia sư, nội dung..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "issues",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Báo cáo & Sự cố"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm sự cố",
+          "placeholder": "Tìm theo mã vé, vấn đề, người gửi..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "appeals",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Kháng cáo"
+      ],
+      "controls": [
+        {
+          "type": "select-one",
+          "name": "Trạng thái kháng cáo\nTất cả\nChờ xem xét\nĐang xem xét\nChấp nhận\nKhông chấp nhận"
+        },
+        {
+          "type": "search",
+          "name": "Tìm kháng cáo",
+          "placeholder": "Mã hồ sơ, tài khoản, nội dung..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "classes",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Kiểm duyệt Tin đăng Tìm Gia sư"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm môn học, học viên, địa chỉ..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "finance",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản trị Tài chính, Ký quỹ Escrow & Phê duyệt Rút tiền"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm tài khoản, mã lệnh..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "subjects",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Danh mục Môn học"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm môn học, phân loại..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "locations",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Khu vực & Địa bàn Hoạt động"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm quận huyện, thành phố..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "settings",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Cài đặt Tham số Toàn sàn"
+      ],
+      "controls": [
+        {
+          "type": "number",
+          "name": "",
+          "placeholder": ""
+        },
+        {
+          "type": "number",
+          "name": "",
+          "placeholder": ""
+        },
+        {
+          "type": "select-one",
+          "name": ""
+        },
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": ""
+        },
+        {
+          "type": "number",
+          "name": "",
+          "placeholder": ""
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "logs",
+      "width": 1440,
+      "scroll": 1440,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Nhật ký Hoạt động Hệ thống (Audit Trail)"
+      ],
+      "controls": [
+        {
+          "type": "select-one",
+          "name": ""
+        },
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm tác nhân, chi tiết thao tác..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "dashboard",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Tổng quan hệ thống"
+      ],
+      "controls": [
+        {
+          "type": "select-one",
+          "name": "Trạng thái"
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "users",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Người dùng"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm người dùng",
+          "placeholder": "Tìm theo tên, username, email, SĐT..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Người dùng\tEmail\tSố điện thoại\tVai trò\tNgày tham gia\tTrạng thái\tThao tác\n",
+          "right": 1193
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Người dùng\tEmail\tSố điện thoại\tVai trò\tNgày tham gia\tTrạng thái\tThao tác",
+          "right": 1193
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "MA\nNguyễn Minh Anh\n@minhanh\n\t\nlearner@demo.tutornearme.vn\n\t\n0900000001\n\tHọc viên",
+          "right": 1193
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "MA\nNguyễn Minh Anh\n@minhanh\n\t\nlearner@demo.tutornearme.vn\n\t\n0900000001\n\tHọc viên",
+          "right": 1193
+        },
+        {
+          "tag": "SPAN",
+          "class": "badge badge--success",
+          "text": "Đang hoạt động",
+          "right": 1095.578125
+        },
+        {
+          "tag": "DIV",
+          "class": "admin-row-actions",
+          "text": "",
+          "right": 1182
+        }
+      ]
+    },
+    {
+      "route": "tutors",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Gia sư"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm gia sư",
+          "placeholder": "Tìm theo tên, trường, môn dạy..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Gia sư\tMôn có thể dạy\tHọc phí\tThời gian gửi\tTrạng thái\tThao tác\n",
+          "right": 1113
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Gia sư\tMôn có thể dạy\tHọc phí\tThời gian gửi\tTrạng thái\tThao tác",
+          "right": 1113
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "TV\nLê Thảo Vy\nĐH Sư phạm TP.HCM\n\t\nTiếng Anh\n\t160.000 đ/buổi\t\n04/10/2026\n\t\nChờ du",
+          "right": 1113
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "TV\nLê Thảo Vy\nĐH Sư phạm TP.HCM\n\t\nTiếng Anh\n\t160.000 đ/buổi\t\n04/10/2026\n\t\nChờ du",
+          "right": 1113
+        },
+        {
+          "tag": "DIV",
+          "class": "admin-row-actions",
+          "text": "",
+          "right": 1102
+        },
+        {
+          "tag": "BUTTON",
+          "class": "",
+          "text": "",
+          "right": 1057.9375
+        }
+      ]
+    },
+    {
+      "route": "reviews",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Kiểm duyệt Đánh giá"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm đánh giá",
+          "placeholder": "Tìm theo người đánh giá, gia sư, nội dung..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Người đánh giá\tGia sư\tĐiểm sao\tNội dung nhận xét\tNgày gửi\tTrạng thái\tThao tác\n",
+          "right": 1153
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Người đánh giá\tGia sư\tĐiểm sao\tNội dung nhận xét\tNgày gửi\tTrạng thái\tThao tác",
+          "right": 1153
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "Lê Hoàng Nam\n\t\nNguyễn Mai Anh\n\t\n5/5\n\t\n“Cách giảng dễ hiểu, bé tự tin hơn sau vài",
+          "right": 1153
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Lê Hoàng Nam\n\t\nNguyễn Mai Anh\n\t\n5/5\n\t\n“Cách giảng dễ hiểu, bé tự tin hơn sau vài",
+          "right": 1153
+        },
+        {
+          "tag": "SPAN",
+          "class": "badge badge--warning",
+          "text": "Cần duyệt",
+          "right": 1040.765625
+        },
+        {
+          "tag": "DIV",
+          "class": "admin-row-actions",
+          "text": "",
+          "right": 1142
+        }
+      ]
+    },
+    {
+      "route": "issues",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Báo cáo & Sự cố"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm sự cố",
+          "placeholder": "Tìm theo mã vé, vấn đề, người gửi..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Mã sự cố\tPhân loại\tNgười gửi\tBên liên quan\tNgày nhận\tTrạng thái\tThao tác\n",
+          "right": 1153
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Mã sự cố\tPhân loại\tNgười gửi\tBên liên quan\tNgày nhận\tTrạng thái\tThao tác",
+          "right": 1153
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "ISSUE-101\tVắng mặt không báo trước\t\nNguyễn Minh Anh\n\t\nHoàng Quang Huy\n\t\n32 phút ",
+          "right": 1153
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "ISSUE-101\tVắng mặt không báo trước\t\nNguyễn Minh Anh\n\t\nHoàng Quang Huy\n\t\n32 phút ",
+          "right": 1153
+        },
+        {
+          "tag": "DIV",
+          "class": "admin-row-actions",
+          "text": "",
+          "right": 1142
+        },
+        {
+          "tag": "BUTTON",
+          "class": "",
+          "text": "",
+          "right": 1075.34375
+        }
+      ]
+    },
+    {
+      "route": "appeals",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Kháng cáo"
+      ],
+      "controls": [
+        {
+          "type": "select-one",
+          "name": "Trạng thái kháng cáo\nTất cả\nChờ xem xét\nĐang xem xét\nChấp nhận\nKhông chấp nhận"
+        },
+        {
+          "type": "search",
+          "name": "Tìm kháng cáo",
+          "placeholder": "Mã hồ sơ, tài khoản, nội dung..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "classes",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Kiểm duyệt Tin đăng Tìm Gia sư"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm môn học, học viên, địa chỉ..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "finance",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản trị Tài chính, Ký quỹ Escrow & Phê duyệt Rút tiền"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm tài khoản, mã lệnh..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "subjects",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Danh mục Môn học"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm môn học, phân loại..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "locations",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Khu vực & Địa bàn Hoạt động"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm quận huyện, thành phố..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "settings",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Cài đặt Tham số Toàn sàn"
+      ],
+      "controls": [
+        {
+          "type": "number",
+          "name": "",
+          "placeholder": ""
+        },
+        {
+          "type": "number",
+          "name": "",
+          "placeholder": ""
+        },
+        {
+          "type": "select-one",
+          "name": ""
+        },
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": ""
+        },
+        {
+          "type": "number",
+          "name": "",
+          "placeholder": ""
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "logs",
+      "width": 1024,
+      "scroll": 1024,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Nhật ký Hoạt động Hệ thống (Audit Trail)"
+      ],
+      "controls": [
+        {
+          "type": "select-one",
+          "name": ""
+        },
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm tác nhân, chi tiết thao tác..."
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "dashboard",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Tổng quan hệ thống"
+      ],
+      "controls": [
+        {
+          "type": "select-one",
+          "name": "Trạng thái"
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Gia sư\tMôn dạy\tGửi lúc\tTrạng thái\tThao tác\n",
+          "right": 693
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Gia sư\tMôn dạy\tGửi lúc\tTrạng thái\tThao tác",
+          "right": 693
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "TV\nLê Thảo Vy\nĐH Sư phạm TP.HCM\n\t\nTiếng Anh\n\t\n04/10/2026\n\t\nChờ duyệt\t\n\n\nHP\nNguyễ",
+          "right": 693
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "TV\nLê Thảo Vy\nĐH Sư phạm TP.HCM\n\t\nTiếng Anh\n\t\n04/10/2026\n\t\nChờ duyệt\t",
+          "right": 693
+        },
+        {
+          "tag": "SPAN",
+          "class": "admin-cell-truncate",
+          "text": "04/10/2026",
+          "right": 450.78125
+        },
+        {
+          "tag": "SPAN",
+          "class": "badge badge--warning",
+          "text": "Chờ duyệt",
+          "right": 560.4375
+        }
+      ]
+    },
+    {
+      "route": "users",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Người dùng"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm người dùng",
+          "placeholder": "Tìm theo tên, username, email, SĐT..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Người dùng\tEmail\tSố điện thoại\tVai trò\tNgày tham gia\tTrạng thái\tThao tác\n",
+          "right": 973
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Người dùng\tEmail\tSố điện thoại\tVai trò\tNgày tham gia\tTrạng thái\tThao tác",
+          "right": 973
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "MA\nNguyễn Minh Anh\n@minhanh\n\t\nlearner@demo.tutornearme.vn\n\t\n0900000001\n\tHọc viên",
+          "right": 973
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "MA\nNguyễn Minh Anh\n@minhanh\n\t\nlearner@demo.tutornearme.vn\n\t\n0900000001\n\tHọc viên",
+          "right": 973
+        },
+        {
+          "tag": "SPAN",
+          "class": "admin-cell-truncate",
+          "text": "learner@demo.tutornearme.vn",
+          "right": 414.796875
+        },
+        {
+          "tag": "SPAN",
+          "class": "admin-cell-truncate",
+          "text": "0900000001",
+          "right": 539.59375
+        }
+      ]
+    },
+    {
+      "route": "tutors",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Gia sư"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm gia sư",
+          "placeholder": "Tìm theo tên, trường, môn dạy..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Gia sư\tMôn có thể dạy\tHọc phí\tThời gian gửi\tTrạng thái\tThao tác\n",
+          "right": 893
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Gia sư\tMôn có thể dạy\tHọc phí\tThời gian gửi\tTrạng thái\tThao tác",
+          "right": 893
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "TV\nLê Thảo Vy\nĐH Sư phạm TP.HCM\n\t\nTiếng Anh\n\t160.000 đ/buổi\t\n04/10/2026\n\t\nChờ du",
+          "right": 893
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "TV\nLê Thảo Vy\nĐH Sư phạm TP.HCM\n\t\nTiếng Anh\n\t160.000 đ/buổi\t\n04/10/2026\n\t\nChờ du",
+          "right": 893
+        },
+        {
+          "tag": "STRONG",
+          "class": "",
+          "text": "160.000 đ",
+          "right": 468.4375
+        },
+        {
+          "tag": "SMALL",
+          "class": "",
+          "text": "/buổi",
+          "right": 494.234375
+        }
+      ]
+    },
+    {
+      "route": "reviews",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Kiểm duyệt Đánh giá"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm đánh giá",
+          "placeholder": "Tìm theo người đánh giá, gia sư, nội dung..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Người đánh giá\tGia sư\tĐiểm sao\tNội dung nhận xét\tNgày gửi\tTrạng thái\tThao tác\n",
+          "right": 933
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Người đánh giá\tGia sư\tĐiểm sao\tNội dung nhận xét\tNgày gửi\tTrạng thái\tThao tác",
+          "right": 933
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "Lê Hoàng Nam\n\t\nNguyễn Mai Anh\n\t\n5/5\n\t\n“Cách giảng dễ hiểu, bé tự tin hơn sau vài",
+          "right": 933
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Lê Hoàng Nam\n\t\nNguyễn Mai Anh\n\t\n5/5\n\t\n“Cách giảng dễ hiểu, bé tự tin hơn sau vài",
+          "right": 933
+        },
+        {
+          "tag": "SPAN",
+          "class": "admin-excerpt-cell",
+          "text": "“Cách giảng dễ hiểu, bé tự tin hơn sau vài buổi học Toán.”",
+          "right": 618.390625
+        },
+        {
+          "tag": "SPAN",
+          "class": "admin-cell-truncate",
+          "text": "02/10/2026",
+          "right": 719.578125
+        }
+      ]
+    },
+    {
+      "route": "issues",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Báo cáo & Sự cố"
+      ],
+      "controls": [
+        {
+          "type": "search",
+          "name": "Tìm kiếm sự cố",
+          "placeholder": "Tìm theo mã vé, vấn đề, người gửi..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Mã sự cố\tPhân loại\tNgười gửi\tBên liên quan\tNgày nhận\tTrạng thái\tThao tác\n",
+          "right": 933
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Mã sự cố\tPhân loại\tNgười gửi\tBên liên quan\tNgày nhận\tTrạng thái\tThao tác",
+          "right": 933
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "ISSUE-101\tVắng mặt không báo trước\t\nNguyễn Minh Anh\n\t\nHoàng Quang Huy\n\t\n32 phút ",
+          "right": 933
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "ISSUE-101\tVắng mặt không báo trước\t\nNguyễn Minh Anh\n\t\nHoàng Quang Huy\n\t\n32 phút ",
+          "right": 933
+        },
+        {
+          "tag": "SPAN",
+          "class": "admin-cell-truncate",
+          "text": "Nguyễn Minh Anh",
+          "right": 406.765625
+        },
+        {
+          "tag": "SPAN",
+          "class": "admin-cell-truncate",
+          "text": "Hoàng Quang Huy",
+          "right": 553.953125
+        }
+      ]
+    },
+    {
+      "route": "appeals",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Kháng cáo"
+      ],
+      "controls": [
+        {
+          "type": "select-one",
+          "name": "Trạng thái kháng cáo\nTất cả\nChờ xem xét\nĐang xem xét\nChấp nhận\nKhông chấp nhận"
+        },
+        {
+          "type": "search",
+          "name": "Tìm kháng cáo",
+          "placeholder": "Mã hồ sơ, tài khoản, nội dung..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Hồ sơ / sự cố\tTài khoản\tLý do\tNgày gửi\tTrạng thái\tThao tác\n",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Hồ sơ / sự cố\tTài khoản\tLý do\tNgày gửi\tTrạng thái\tThao tác",
+          "right": 633
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "Chưa có kháng cáo. Hồ sơ người dùng gửi sẽ xuất hiện tại đây.",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Chưa có kháng cáo. Hồ sơ người dùng gửi sẽ xuất hiện tại đây.",
+          "right": 633
+        }
+      ]
+    },
+    {
+      "route": "classes",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Kiểm duyệt Tin đăng Tìm Gia sư"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm môn học, học viên, địa chỉ..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Môn & Khối lớp\tHọc viên / Phụ huynh\tHình thức & Địa chỉ\tNgân sách mong muốn\tKiểm",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Môn & Khối lớp\tHọc viên / Phụ huynh\tHình thức & Địa chỉ\tNgân sách mong muốn\tKiểm",
+          "right": 633
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "Toán\nLớp 8\n\t\nNguyễn Minh Anh\nID: demo-learner\t\nTại nhà\nBình Thạnh, TP. Hồ Chí Mi",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Toán\nLớp 8\n\t\nNguyễn Minh Anh\nID: demo-learner\t\nTại nhà\nBình Thạnh, TP. Hồ Chí Mi",
+          "right": 633
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "text": "Học thử 1 buổi",
+          "right": 410.3125
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "Học thử 1 buổi",
+          "right": 431.765625
+        }
+      ]
+    },
+    {
+      "route": "finance",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản trị Tài chính, Ký quỹ Escrow & Phê duyệt Rút tiền"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm tài khoản, mã lệnh..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Gia sư\tNgân hàng thụ hưởng\tSố tài khoản & Chủ TK\tSố tiền rút\tThời gian yêu cầu\tT",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Gia sư\tNgân hàng thụ hưởng\tSố tài khoản & Chủ TK\tSố tiền rút\tThời gian yêu cầu\tT",
+          "right": 633
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "Trần Gia Bảo\tVietcombank\t1012345678\nTRAN GIA BAO\n\t500.000 đ\t16:00:00 4/10/2026\tC",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Trần Gia Bảo\tVietcombank\t1012345678\nTRAN GIA BAO\n\t500.000 đ\t16:00:00 4/10/2026\tC",
+          "right": 633
+        },
+        {
+          "tag": "SPAN",
+          "class": "badge badge--warning",
+          "text": "Chờ phê duyệt",
+          "right": 528.375
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "text": "Duyệt chuyển\nTừ chối",
+          "right": 617
+        }
+      ]
+    },
+    {
+      "route": "subjects",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Danh mục Môn học"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm môn học, phân loại..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Môn học\tNhóm phân loại\tTrạng thái\tNgày thêm\tThao tác\n",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Môn học\tNhóm phân loại\tTrạng thái\tNgày thêm\tThao tác",
+          "right": 633
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "Toán\n\tKhoa học tự nhiên\tĐang áp dụng\t1/9/2026\t\n\n\nNgữ văn\n\tKhoa học xã hội\tĐang á",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Toán\n\tKhoa học tự nhiên\tĐang áp dụng\t1/9/2026\t",
+          "right": 633
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "text": "",
+          "right": 617
+        },
+        {
+          "tag": "BUTTON",
+          "class": "icon-button",
+          "text": "",
+          "right": 565
+        }
+      ]
+    },
+    {
+      "route": "locations",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Quản lý Khu vực & Địa bàn Hoạt động"
+      ],
+      "controls": [
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm quận huyện, thành phố..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Khu vực / Quận\tTỉnh / Thành phố\tTrạng thái\tNgày thêm\tThao tác\n",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Khu vực / Quận\tTỉnh / Thành phố\tTrạng thái\tNgày thêm\tThao tác",
+          "right": 633
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "Quận 1\n\tTP. Hồ Chí Minh\tĐang mở\t1/9/2026\t\n\n\nQuận 3\n\tTP. Hồ Chí Minh\tĐang mở\t1/9/",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Quận 1\n\tTP. Hồ Chí Minh\tĐang mở\t1/9/2026\t",
+          "right": 633
+        },
+        {
+          "tag": "DIV",
+          "class": "",
+          "text": "",
+          "right": 617
+        },
+        {
+          "tag": "BUTTON",
+          "class": "icon-button",
+          "text": "",
+          "right": 565
+        }
+      ]
+    },
+    {
+      "route": "settings",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Cài đặt Tham số Toàn sàn"
+      ],
+      "controls": [
+        {
+          "type": "number",
+          "name": "",
+          "placeholder": ""
+        },
+        {
+          "type": "number",
+          "name": "",
+          "placeholder": ""
+        },
+        {
+          "type": "select-one",
+          "name": ""
+        },
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": ""
+        },
+        {
+          "type": "number",
+          "name": "",
+          "placeholder": ""
+        }
+      ],
+      "offenders": []
+    },
+    {
+      "route": "logs",
+      "width": 390,
+      "scroll": 390,
+      "font": "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif",
+      "headings": [
+        "Nhật ký Hoạt động Hệ thống (Audit Trail)"
+      ],
+      "controls": [
+        {
+          "type": "select-one",
+          "name": ""
+        },
+        {
+          "type": "text",
+          "name": "",
+          "placeholder": "Tìm kiếm tác nhân, chi tiết thao tác..."
+        }
+      ],
+      "offenders": [
+        {
+          "tag": "THEAD",
+          "class": "",
+          "text": "Thời gian\tTác nhân\tHành động\tĐối tượng\tChi tiết thao tác\n",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "Thời gian\tTác nhân\tHành động\tĐối tượng\tChi tiết thao tác",
+          "right": 633
+        },
+        {
+          "tag": "TBODY",
+          "class": "",
+          "text": "09:30:00 1/10/2026\n\t\nQuản trị viên\n\tAPPROVE_TUTOR\ttutor_profile: mai-anh\tPhê duy",
+          "right": 633
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "09:30:00 1/10/2026\n\t\nQuản trị viên\n\tAPPROVE_TUTOR\ttutor_profile: mai-anh\tPhê duy",
+          "right": 633
+        },
+        {
+          "tag": "SPAN",
+          "class": "",
+          "text": "tutor_profile: mai-anh",
+          "right": 571.84375
+        },
+        {
+          "tag": "TR",
+          "class": "",
+          "text": "14:15:00 2/10/2026\n\t\nQuản trị viên\n\tRESOLVE_DISPUTE\tissue: ISSUE-101\tHòa giải tr",
+          "right": 633
+        }
+      ]
+    }
+  ],
+  "errors": []
+}

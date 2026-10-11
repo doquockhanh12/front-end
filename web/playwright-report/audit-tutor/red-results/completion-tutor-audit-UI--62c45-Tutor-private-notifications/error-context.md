@@ -1,0 +1,298 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: completion-tutor-audit.spec.js >> UI-COMP-T07 another Tutor cannot read canonical Tutor private notifications
+- Location: tests\e2e\completion-tutor-audit.spec.js:75:1
+
+# Error details
+
+```
+Error: expect(locator).toHaveCount(expected) failed
+
+Locator:  getByText('Có phụ huynh vừa đăng tin tìm gia sư Tiếng Anh lớp 9 tại Quận Bình Thạnh.', { exact: true })
+Expected: 0
+Received: 1
+Timeout:  5000ms
+
+Call log:
+  - Expect "toHaveCount" getByText('Có phụ huynh vừa đăng tin tìm gia sư Tiếng Anh lớp 9 tại Quận Bình Thạnh.', { exact: true }) with timeout 5000ms
+  - waiting for getByText('Có phụ huynh vừa đăng tin tìm gia sư Tiếng Anh lớp 9 tại Quận Bình Thạnh.', { exact: true })
+    13 × locator resolved to 1 element
+       - unexpected value "1"
+
+```
+
+```
+Error: browserContext._wrapApiCall: file data stream has unexpected number of bytes
+```
+
+# Page snapshot
+
+```yaml
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - complementary "Điều hướng gia sư" [ref=e4]:
+      - link "TutorNearMe Gia sư gần bạn. Tri thức gần hơn." [ref=e6] [cursor=pointer]:
+        - /url: /
+        - strong [ref=e7]: TutorNearMe
+        - generic [ref=e8]: Gia sư gần bạn. Tri thức gần hơn.
+      - navigation "Các mục của gia sư" [ref=e9]:
+        - link "Tổng quan" [ref=e10] [cursor=pointer]:
+          - /url: /tutor/dashboard
+        - link "Yêu cầu học 0" [ref=e17] [cursor=pointer]:
+          - /url: /tutor/requests
+          - generic [ref=e21]: Yêu cầu học
+          - text: "0"
+        - link "Lịch dạy học" [ref=e22] [cursor=pointer]:
+          - /url: /tutor/timetable
+        - link "Tìm học viên mới" [ref=e26] [cursor=pointer]:
+          - /url: /tutor/find-students
+        - link "Ví & Thu nhập" [ref=e33] [cursor=pointer]:
+          - /url: /tutor/wallet
+        - link "Hồ sơ gia sư" [ref=e38] [cursor=pointer]:
+          - /url: /tutor/profile
+        - link "Tin nhắn" [ref=e43] [cursor=pointer]:
+          - /url: /messages
+        - link "Kháng cáo" [ref=e47] [cursor=pointer]:
+          - /url: /appeals
+        - link "Trung tâm Trợ giúp" [ref=e53] [cursor=pointer]:
+          - /url: /help
+    - generic [ref=e58]:
+      - banner [ref=e59]:
+        - navigation "Điều hướng nhanh" [ref=e60]:
+          - link "Tìm lớp gần tôi" [ref=e61] [cursor=pointer]:
+            - /url: /tutor/map
+          - link "Tổng Quan" [ref=e65] [cursor=pointer]:
+            - /url: /tutor/dashboard
+        - generic [ref=e71]:
+          - generic [ref=e72]:
+            - button "Thông báo" [active] [ref=e73] [cursor=pointer]:
+              - generic [ref=e77]: "1"
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e80]:
+                  - text: Thông báo
+                  - generic [ref=e81]: (1)
+                - button "Đã đọc tất cả" [ref=e82] [cursor=pointer]
+              - generic [ref=e92] [cursor=pointer]:
+                - generic [ref=e93]: Lớp học mới gần bạn!
+                - generic [ref=e94]: Có phụ huynh vừa đăng tin tìm gia sư Tiếng Anh lớp 9 tại Quận Bình Thạnh.
+                - generic [ref=e95]: 17:00 · 4/10/2026
+          - link "Ảnh đại diện của Nguyễn Mai Anh maianh" [ref=e97] [cursor=pointer]:
+            - /url: /tutor/profile
+            - img "Ảnh đại diện của Nguyễn Mai Anh" [ref=e98]:
+              - generic [aria-hidden] [ref=e99]: MA
+            - generic [ref=e100]: maianh
+          - button "Đăng xuất" [ref=e101] [cursor=pointer]
+      - main [ref=e105]:
+        - generic [ref=e106]:
+          - generic [ref=e107]:
+            - heading "Xin chào, Nguyễn Mai Anh" [level=1] [ref=e108]
+            - paragraph [ref=e114]: Cùng tiếp tục tạo ra tác động tích cực qua từng buổi học.
+          - generic "Chỉ số tổng quan" [ref=e115]:
+            - generic [ref=e116]:
+              - generic [ref=e117]: Yêu cầu học mới
+              - strong [ref=e118]: "0"
+              - generic [ref=e119]: ↑ +0
+              - link "Xem chi tiết" [ref=e120] [cursor=pointer]:
+                - /url: "#requests-title"
+            - generic [ref=e123]:
+              - generic [ref=e124]: Lịch dạy tuần này
+              - strong [ref=e125]: "0"
+              - generic [ref=e126]: ↑ +2
+              - link "Xem chi tiết" [ref=e127] [cursor=pointer]:
+                - /url: "#teaching-calendar"
+            - generic [ref=e130]:
+              - generic [ref=e131]: Thu nhập tháng này
+              - strong [ref=e132]: 0đ
+              - link "Xem chi tiết" [ref=e133] [cursor=pointer]:
+                - /url: /tutor/income
+            - generic [ref=e136]:
+              - generic [ref=e137]: Đánh giá trung bình
+              - strong [ref=e138]: —/5
+              - link "Xem chi tiết" [ref=e139] [cursor=pointer]:
+                - /url: "#tutor-profile-summary"
+          - generic [ref=e142]:
+            - region [ref=e143]:
+              - generic [ref=e144]:
+                - heading "Yêu cầu học mới (0)" [level=2] [ref=e145]
+                - link "Xem tất cả" [ref=e146] [cursor=pointer]:
+                  - /url: /tutor/requests
+            - region [ref=e149]:
+              - generic [ref=e150]:
+                - heading "Lịch dạy học" [level=2] [ref=e151]
+                - link "Chỉnh sửa lịch" [ref=e152] [cursor=pointer]:
+                  - /url: /tutor/timetable
+              - table [ref=e156]:
+                - caption [ref=e157]: Tổng quan lịch rảnh đã lưu và buổi dạy theo ngày và buổi trong tuần.
+                - rowgroup [ref=e158]:
+                  - row [ref=e159]:
+                    - columnheader "Buổi" [ref=e160]
+                    - columnheader "T2" [ref=e162]
+                    - columnheader "T3" [ref=e163]
+                    - columnheader "T4" [ref=e164]
+                    - columnheader "T5" [ref=e165]
+                    - columnheader "T6" [ref=e166]
+                    - columnheader "T7" [ref=e167]
+                    - columnheader "CN" [ref=e168]
+                - rowgroup [ref=e169]:
+                  - row [ref=e170]:
+                    - rowheader "Sáng 06:00–12:00" [ref=e171]:
+                      - text: Sáng
+                      - generic [ref=e172]: 06:00–12:00
+                    - cell [ref=e173]:
+                      - link "Sáng T2, chưa có lịch rảnh" [ref=e174] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e175]
+                    - cell [ref=e176]:
+                      - link "Sáng T3, chưa có lịch rảnh" [ref=e177] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e178]
+                    - cell [ref=e179]:
+                      - link "Sáng T4, chưa có lịch rảnh" [ref=e180] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e181]
+                    - cell [ref=e182]:
+                      - link "Sáng T5, chưa có lịch rảnh" [ref=e183] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e184]
+                    - cell [ref=e185]:
+                      - link "Sáng T6, chưa có lịch rảnh" [ref=e186] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e187]
+                    - cell [ref=e188]:
+                      - link "Sáng T7, chưa có lịch rảnh" [ref=e189] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e190]
+                    - cell [ref=e191]:
+                      - link "Sáng CN, chưa có lịch rảnh" [ref=e192] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e193]
+                  - row [ref=e194]:
+                    - rowheader "Chiều 12:00–17:00" [ref=e195]:
+                      - text: Chiều
+                      - generic [ref=e196]: 12:00–17:00
+                    - cell [ref=e197]:
+                      - link "Chiều T2, chưa có lịch rảnh" [ref=e198] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e199]
+                    - cell [ref=e200]:
+                      - link "Chiều T3, chưa có lịch rảnh" [ref=e201] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e202]
+                    - cell [ref=e203]:
+                      - link "Chiều T4, chưa có lịch rảnh" [ref=e204] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e205]
+                    - cell [ref=e206]:
+                      - link "Chiều T5, chưa có lịch rảnh" [ref=e207] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e208]
+                    - cell [ref=e209]:
+                      - link "Chiều T6, chưa có lịch rảnh" [ref=e210] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e211]
+                    - cell [ref=e212]:
+                      - link "Chiều T7, chưa có lịch rảnh" [ref=e213] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e214]
+                    - cell [ref=e215]:
+                      - link "Chiều CN, chưa có lịch rảnh" [ref=e216] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e217]
+                  - row [ref=e218]:
+                    - rowheader "Tối 17:00–24:00" [ref=e219]:
+                      - text: Tối
+                      - generic [ref=e220]: 17:00–24:00
+                    - cell [ref=e221]:
+                      - link "Tối T2, chưa có lịch rảnh" [ref=e222] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e223]
+                    - cell [ref=e224]:
+                      - link "Tối T3, chưa có lịch rảnh" [ref=e225] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e226]
+                    - cell [ref=e227]:
+                      - link "Tối T4, chưa có lịch rảnh" [ref=e228] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e229]
+                    - cell [ref=e230]:
+                      - link "Tối T5, chưa có lịch rảnh" [ref=e231] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e232]
+                    - cell [ref=e233]:
+                      - link "Tối T6, chưa có lịch rảnh" [ref=e234] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e235]
+                    - cell [ref=e236]:
+                      - link "Tối T7, chưa có lịch rảnh" [ref=e237] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e238]
+                    - cell [ref=e239]:
+                      - link "Tối CN, chưa có lịch rảnh" [ref=e240] [cursor=pointer]:
+                        - /url: /tutor/timetable
+                        - checkbox [disabled] [aria-hidden] [ref=e241]
+              - generic [ref=e242]:
+                - generic [ref=e243]: Có lịch rảnh
+                - generic [ref=e245]: Có buổi học
+              - paragraph [ref=e247]: Lịch rảnh đã lưu dùng ngày và khoảng giờ cụ thể. Mở thời khóa biểu để chỉnh sửa.
+              - generic [ref=e248]:
+                - heading "Buổi dạy trong tuần (0)" [level=3] [ref=e249]
+                - paragraph [ref=e250]: Chưa có buổi dạy trong tuần.
+              - link "Xem toàn bộ thời khóa biểu" [ref=e251] [cursor=pointer]:
+                - /url: /tutor/timetable
+        - complementary "Hồ sơ, thu nhập và cập nhật nhanh" [ref=e254]:
+          - generic [ref=e255]:
+            - generic [ref=e256]:
+              - heading "Hồ sơ gia sư" [level=2] [ref=e257]
+              - link "Chỉnh sửa" [ref=e258] [cursor=pointer]:
+                - /url: /tutor/profile
+            - generic [ref=e261]:
+              - img "Ảnh đại diện của Nguyễn Mai Anh" [ref=e262]:
+                - generic [aria-hidden] [ref=e263]: MA
+              - generic [ref=e264]:
+                - heading "Nguyễn Mai Anh" [level=3] [ref=e265]
+                - paragraph [ref=e266]: Gia sư tại
+                - paragraph [ref=e267]: Chưa có đánh giá
+            - generic [ref=e268]:
+              - generic [ref=e269]:
+                - generic [ref=e270]: Hồ sơ hoàn thiện
+                - strong [ref=e271]: 85%
+              - progressbar "Độ hoàn thiện hồ sơ" [ref=e272]
+            - generic [ref=e273]:
+              - generic [ref=e274]:
+                - term [ref=e275]: Môn dạy
+                - definition
+              - generic [ref=e276]:
+                - term [ref=e277]: Khu vực
+                - definition
+              - generic [ref=e278]:
+                - term [ref=e279]: Mức phí
+                - definition [ref=e280]: 0đ / buổi
+          - generic [ref=e281]:
+            - heading "Thu nhập / buổi học gần đây" [level=2] [ref=e283]
+            - strong [ref=e284]: 0đ
+            - paragraph [ref=e285]: Tháng 10/2026
+            - paragraph [ref=e287]: Chưa có buổi học tạo thu nhập trong tháng.
+            - link "Xem thêm" [ref=e288] [cursor=pointer]:
+              - /url: /tutor/income
+          - generic [ref=e291]:
+            - heading "Cập nhật nhanh" [level=2] [ref=e293]
+            - generic [ref=e294]:
+              - link "Chỉnh sửa hồ sơ" [ref=e295] [cursor=pointer]:
+                - /url: /tutor/profile
+              - link "Quản lý khu vực" [ref=e300] [cursor=pointer]:
+                - /url: /tutor/profile
+              - link "Cập nhật môn dạy" [ref=e305] [cursor=pointer]:
+                - /url: /tutor/profile
+              - link "Thiết lập mức phí" [ref=e309] [cursor=pointer]:
+                - /url: /tutor/profile
+            - paragraph [ref=e314]: Đã lưu 2 phút trước
+  - complementary "Widget nhắn tin nhanh" [ref=e315]:
+    - button "Mở cửa sổ trò chuyện" [ref=e316] [cursor=pointer]
+```

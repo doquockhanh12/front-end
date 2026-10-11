@@ -1,0 +1,17 @@
+import { chromium } from '@playwright/test';
+import { createDemoState } from '../src/features/domain/demoDomain.js';
+const browser = await chromium.launch();
+const page = await browser.newPage();
+const seed = createDemoState(new Date('2026-10-05T06:00:00+07:00'));
+page.on('pageerror', e => console.log('PAGEERROR', e.message));
+page.on('console', m => console.log('BROWSER', m.type(), m.text()));
+await page.goto('http://127.0.0.1:5180/login');
+await page.evaluate(seed => { localStorage.setItem('tnm.demo.domain.v1', JSON.stringify(seed)); localStorage.setItem('tutornearme.demo-auth.v1', JSON.stringify({ user: seed.users.find(u => u.id === 'demo-tutor'), accounts: [] })); }, seed);
+await page.goto('http://127.0.0.1:5180/messages');
+await page.evaluate(() => { document.addEventListener('click', e => console.log('CLICK', e.target.outerHTML?.slice(0, 300)), true); new MutationObserver(() => console.log('DIALOG COUNT', document.querySelectorAll('[role=dialog]').length)).observe(document.body, {childList:true,subtree:true}); });
+const button = page.getByRole('button', {name:'Gửi Đề xuất Học phí'}).first();
+console.log('BOX', await button.boundingBox());
+await button.click();
+console.log('DIALOGS', await page.locator('[role=dialog]').count());
+await page.screenshot({path:'playwright-report/offer-debug.png'});
+await browser.close();

@@ -1,0 +1,1 @@
+{"version":9,"type":"context-options","origin":"library","browserName":"","playwrightVersion":"1.63.0","options":{},"platform":"win32","wallTime":1791289216845,"monotonicTime":138310.233,"sdkLanguage":"javascript","title":"auth-regressions.spec.js:6 › AUTH-001 protected navigation keeps redirect through shared login and registration"}

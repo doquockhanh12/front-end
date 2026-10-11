@@ -1,0 +1,539 @@
+[
+  {
+    "width": 1440,
+    "route": "/tutor/dashboard",
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Xin chào, Trần Gia Bảo"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/tutor/profile",
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Hồ sơ gia sư"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/tutor/timetable",
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Lịch dạy học & Khiên An Toàn"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/tutor/find-students",
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Tìm học viên & Nhận lớp mới"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/tutor/requests",
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Yêu cầu học"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/tutor/requests/req-1",
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Chi tiết yêu cầu"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/tutor/income",
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Thu nhập"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/tutor/wallet",
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Ví & Rút tiền"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/tutor/map",
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Tìm lớp gần tôi"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/appeals",
+    "geometry": {
+      "width": 1440,
+      "scroll": 1440,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Kháng cáo"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/tutor/wallet",
+    "payoutDisabled": true,
+    "text": "Số dư khả dụng\n0 đ\n\nSố dư thực nhận sẵn sàng để rút về tài khoản ngân hàng bất kỳ lúc nào.\n\nRút tiền về STK Ngân hàng\nTổng thu nhập tích lũy\n0 đ\nĐã khấu trừ 10% phí nền tảng TutorNearMe\n\nBao gồm thù lao các buổi dạy đã hoàn tất (90% giá gói) và tiền đền bù khi học viên hủy lịch (50% hoặc 100%).\n\nSổ cái giao dịch thu nhập & rút tiền\nTất cả (0)\nThù lao dạy học (90%)\nBồi thường hủy lịch\nLệnh rút tiền\n\nChưa có bản ghi giao dịch nào trong mục này."
+  },
+  {
+    "width": 1440,
+    "modal": "share-trip",
+    "bounds": {
+      "x": 460,
+      "y": 239.28125,
+      "width": 520,
+      "height": 421.4375
+    },
+    "overflow": 1440,
+    "text": "Chia sẻ hành trình dạy học cho người thân\n\nNgười thân có thể xem định vị thời gian thực, thời gian bắt đầu/kết thúc và trạng thái an toàn của bạn.\n\nMôn dạy: Toán\nHọc viên: N.M.A\nThời gian: Thứ 3, 06/10 · 07:00 – 07:45\nĐịa chỉ: Địa điểm minh họa\nLiên kết bảo mật mã hóa (Trip Token):\nSao chép\nĐóng"
+  },
+  {
+    "width": 1440,
+    "modal": "SOS",
+    "text": "🚨 BÁO ĐỘNG SOS KHẨN CẤP ĐÃ KÍCH HOẠT!\n\nTín hiệu khẩn cấp đã được gửi tới Ban Quản Trị TutorNearMe và trung tâm ứng cứu khẩn cấp 24/7.\n\nBuổi dạy: Toán · N.M.A\nĐịa điểm: Địa điểm minh họa\nThời gian: Thứ 3, 06/10 (07:00 – 07:45)\n✓ Đã phát định vị GPS và gửi tin nhắn SMS khẩn cấp tới 3 người thân.\nGọi trực tiếp Hotline 113\nTôi đã an toàn / Đóng cảnh báo",
+    "bounds": {
+      "x": 460,
+      "y": 178.015625,
+      "width": 520,
+      "height": 543.96875
+    }
+  },
+  {
+    "width": 1024,
+    "route": "/tutor/dashboard",
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Xin chào, Trần Gia Bảo"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/tutor/profile",
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Hồ sơ gia sư"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/tutor/timetable",
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Lịch dạy học & Khiên An Toàn"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/tutor/find-students",
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Tìm học viên & Nhận lớp mới"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/tutor/requests",
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Yêu cầu học"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/tutor/requests/req-1",
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Chi tiết yêu cầu"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/tutor/income",
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Thu nhập"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/tutor/wallet",
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Ví & Rút tiền"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/tutor/map",
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Tìm lớp gần tôi"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/appeals",
+    "geometry": {
+      "width": 1024,
+      "scroll": 1024,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Kháng cáo"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/tutor/wallet",
+    "payoutDisabled": true,
+    "text": "Số dư khả dụng\n0 đ\n\nSố dư thực nhận sẵn sàng để rút về tài khoản ngân hàng bất kỳ lúc nào.\n\nRút tiền về STK Ngân hàng\nTổng thu nhập tích lũy\n0 đ\nĐã khấu trừ 10% phí nền tảng TutorNearMe\n\nBao gồm thù lao các buổi dạy đã hoàn tất (90% giá gói) và tiền đền bù khi học viên hủy lịch (50% hoặc 100%).\n\nSổ cái giao dịch thu nhập & rút tiền\nTất cả (0)\nThù lao dạy học (90%)\nBồi thường hủy lịch\nLệnh rút tiền\n\nChưa có bản ghi giao dịch nào trong mục này."
+  },
+  {
+    "width": 1024,
+    "modal": "share-trip",
+    "bounds": {
+      "x": 252,
+      "y": 239.28125,
+      "width": 520,
+      "height": 421.4375
+    },
+    "overflow": 1024,
+    "text": "Chia sẻ hành trình dạy học cho người thân\n\nNgười thân có thể xem định vị thời gian thực, thời gian bắt đầu/kết thúc và trạng thái an toàn của bạn.\n\nMôn dạy: Toán\nHọc viên: N.M.A\nThời gian: Thứ 3, 06/10 · 07:00 – 07:45\nĐịa chỉ: Địa điểm minh họa\nLiên kết bảo mật mã hóa (Trip Token):\nSao chép\nĐóng"
+  },
+  {
+    "width": 1024,
+    "modal": "SOS",
+    "text": "🚨 BÁO ĐỘNG SOS KHẨN CẤP ĐÃ KÍCH HOẠT!\n\nTín hiệu khẩn cấp đã được gửi tới Ban Quản Trị TutorNearMe và trung tâm ứng cứu khẩn cấp 24/7.\n\nBuổi dạy: Toán · N.M.A\nĐịa điểm: Địa điểm minh họa\nThời gian: Thứ 3, 06/10 (07:00 – 07:45)\n✓ Đã phát định vị GPS và gửi tin nhắn SMS khẩn cấp tới 3 người thân.\nGọi trực tiếp Hotline 113\nTôi đã an toàn / Đóng cảnh báo",
+    "bounds": {
+      "x": 252,
+      "y": 178.015625,
+      "width": 520,
+      "height": 543.96875
+    }
+  },
+  {
+    "width": 390,
+    "route": "/tutor/dashboard",
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Xin chào, Trần Gia Bảo"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/tutor/profile",
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Hồ sơ gia sư"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/tutor/timetable",
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Lịch dạy học & Khiên An Toàn"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/tutor/find-students",
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Tìm học viên & Nhận lớp mới"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/tutor/requests",
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Yêu cầu học"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/tutor/requests/req-1",
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Chi tiết yêu cầu"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/tutor/income",
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Thu nhập"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/tutor/wallet",
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Ví & Rút tiền"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/tutor/map",
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Tìm lớp gần tôi"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/appeals",
+    "geometry": {
+      "width": 390,
+      "scroll": 390,
+      "fonts": [
+        "\"Nunito Sans\", Nunito, \"Segoe UI\", sans-serif"
+      ],
+      "heading": [
+        "Kháng cáo"
+      ]
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/tutor/wallet",
+    "payoutDisabled": true,
+    "text": "Số dư khả dụng\n0 đ\n\nSố dư thực nhận sẵn sàng để rút về tài khoản ngân hàng bất kỳ lúc nào.\n\nRút tiền về STK Ngân hàng\nTổng thu nhập tích lũy\n0 đ\nĐã khấu trừ 10% phí nền tảng TutorNearMe\n\nBao gồm thù lao các buổi dạy đã hoàn tất (90% giá gói) và tiền đền bù khi học viên hủy lịch (50% hoặc 100%).\n\nSổ cái giao dịch thu nhập & rút tiền\nTất cả (0)\nThù lao dạy học (90%)\nBồi thường hủy lịch\nLệnh rút tiền\n\nChưa có bản ghi giao dịch nào trong mục này."
+  },
+  {
+    "width": 390,
+    "modal": "share-trip",
+    "bounds": {
+      "x": 16,
+      "y": 213.71875,
+      "width": 358,
+      "height": 472.546875
+    },
+    "overflow": 390,
+    "text": "Chia sẻ hành trình dạy học cho người thân\n\nNgười thân có thể xem định vị thời gian thực, thời gian bắt đầu/kết thúc và trạng thái an toàn của bạn.\n\nMôn dạy: Toán\nHọc viên: N.M.A\nThời gian: Thứ 3, 06/10 · 07:00 – 07:45\nĐịa chỉ: Địa điểm minh họa\nLiên kết bảo mật mã hóa (Trip Token):\nSao chép\nĐóng"
+  },
+  {
+    "width": 390,
+    "modal": "SOS",
+    "text": "🚨 BÁO ĐỘNG SOS KHẨN CẤP ĐÃ KÍCH HOẠT!\n\nTín hiệu khẩn cấp đã được gửi tới Ban Quản Trị TutorNearMe và trung tâm ứng cứu khẩn cấp 24/7.\n\nBuổi dạy: Toán · N.M.A\nĐịa điểm: Địa điểm minh họa\nThời gian: Thứ 3, 06/10 (07:00 – 07:45)\n✓ Đã phát định vị GPS và gửi tin nhắn SMS khẩn cấp tới 3 người thân.\nGọi trực tiếp Hotline 113\nTôi đã an toàn / Đóng cảnh báo",
+    "bounds": {
+      "x": 16,
+      "y": 166.609375,
+      "width": 358,
+      "height": 566.765625
+    }
+  }
+]

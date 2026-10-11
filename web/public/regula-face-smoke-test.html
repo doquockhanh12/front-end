@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TutorNearMe — Regula Face Capture (DEV)</title>
+  <style>
+    body { font: 16px/1.5 system-ui, sans-serif; margin: 0; background: #f7f7fb; color: #18212f; }
+    main { max-width: 780px; padding: 28px 18px; margin: 30px auto; }
+    .panel { border-radius: 16px; background: white; padding: 22px; box-shadow: 0 6px 24px #141c310d; }
+    h1 { font-size: 1.5rem; margin-top: 0; }
+    face-capture { display: block; width: 100%; min-height: 420px; }
+    .muted { color: #566175; } .status { font-weight: 600; padding-top: 12px; }
+    .warn { color: #9a4a00; }
+    code { background: #eef0f6; padding: 2px 5px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <main><section class="panel">
+    <h1>TutorNearMe — thử nghiệm Regula Face Capture</h1>
+    <p class="muted">Bước kiểm tra camera và nhận diện ảnh chân dung. <strong>Không phải Face Liveness, Face Matching hay xác minh CCCD.</strong></p>
+    <p class="warn">Chỉ sử dụng với dữ liệu thử nghiệm và người đã đồng ý. Không đưa ảnh giấy tờ tùy thân lên dịch vụ demo.</p>
+    <div id="capture-container"><face-capture></face-capture></div>
+    <p id="status" role="status" aria-live="polite" class="status">Đang tải Regula Web Component…</p>
+    <p class="muted">Trang chạy trên <code>localhost</code> hoặc HTTPS. Không lưu ảnh, không ghi ảnh vào console và không gửi ảnh về TutorNearMe.</p>
+  </section></main>
+  <script src="https://unpkg.com/@regulaforensics/vp-frontend-face-components@latest/dist/main.iife.js"></script>
+  <script>
+    const statusEl = document.getElementById('status');
+    const capture = document.querySelector('face-capture');
+    capture.addEventListener('face-capture', (event) => {
+      const detail = event.detail || {};
+      if (detail.action === 'SERVICE_INITIALIZED') statusEl.textContent = 'Camera SDK đã khởi tạo. Bạn có thể thử chụp.';
+      if (detail.action === 'PROCESS_FINISHED') {
+        const ok = detail.data?.status === 1 && Array.isArray(detail.data?.response?.capture) && detail.data.response.capture.length > 0;
+        statusEl.textContent = ok
+          ? 'Đã thử chụp khuôn mặt thành công (chỉ Face Capture, chưa KYC).'
+          : `Thử chụp không thành công: ${String(detail.data?.reason || 'không xác định')}`;
+      }
+      if (detail.action === 'CLOSE') statusEl.textContent = 'Đã đóng trình chụp.';
+    });
+    // Restrict trial to capture only. No identity status is set from browser events.
+    customElements.whenDefined('face-capture').then(() => {
+      if (statusEl.textContent.startsWith('Đang tải')) statusEl.textContent = 'Regula đã tải; cấp quyền camera để bắt đầu.';
+    }).catch(() => { statusEl.textContent = 'Không tải được Regula Web Component.'; });
+  </script>
+</body>
+</html>

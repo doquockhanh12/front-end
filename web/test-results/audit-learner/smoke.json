@@ -1,0 +1,530 @@
+[
+  {
+    "width": 1440,
+    "route": "/learner/search",
+    "metrics": {
+      "width": 1440,
+      "scroll": 1440,
+      "headings": [
+        "Bạn đau đầu để\ntìm gia sư tốt,\nTutorNearMe\nsẽ giúp bạn.",
+        "Một lựa chọn tốt bắt đầu từ sự phù hợp"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nTUTORNEARME · HỌC GẦN HƠN, HIỂU NHAU HƠN\nBạn đau đầu để\ntìm gia sư tốt,\nTutorNearMe\nsẽ giúp bạn.\n\nTìm sinh viên gia sư theo đúng môn, khu vực, thời gian rảnh và mức phí gia đình mong muốn — tất cả trong một trải nghiệm rõ ràng, dễ so sánh.\n\nTìm gia sư phù hợp\nXem cách hoạt động ↘\nGần bạn\nưu tiên khu vực phù hợp\n4.9/5\nđánh giá demo\nTên hoặc từ khóa\nMôn học\nTất cả môn\nToán\nVật lý\nT",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/learner/dashboard",
+    "metrics": {
+      "width": 1440,
+      "scroll": 1440,
+      "headings": [
+        "Việc học của bạn,\ngọn trong một nơi.",
+        "Thông tin cá nhân",
+        "Địa chỉ đang sinh sống",
+        "Gia sư đã lưu\n0",
+        "Yêu cầu học gần đây",
+        "Lịch đã xác nhận"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nKHÔNG GIAN NGƯỜI HỌC\nViệc học của bạn,\ngọn trong một nơi.\n\nQuản lý hồ sơ, theo dõi yêu cầu và kết nối với gia sư phù hợp.\n\nTìm gia sư\nMA\nXin chào, Nguyễn Minh Anh!\n@minhanh · Người học\nXem và cập nhật hồ sơ\n1\nYêu cầu chờ phản hồi\n1\nYêu cầu đã xác nhận\n0\nGia sư đã lưu\nLịch học\nVí tiền\nThông tin cá nhân\nĐịa chỉ\nYêu cầu học\nGia sư đã lưu\nKháng cáo\nHỒ SƠ TÀI KHOẢN\nThông tin cá nhân\nC",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/tutors/quoc-bao",
+    "metrics": {
+      "width": 1440,
+      "scroll": 1440,
+      "headings": [
+        "Trần Gia Bảo",
+        "Giới thiệu",
+        "Môn dạy & cấp độ",
+        "Lịch rảnh trong tuần",
+        "Khu vực & hình thức dạy",
+        "Gửi yêu cầu học",
+        "Đánh giá gần đây"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nTìm gia sư\n/\nHồ sơ gia sư\nGB\nHỒ SƠ GIA SƯ · DEMO\nTrần Gia Bảo\nHồ sơ demo đã xác minh\n\nĐH Ngoại thương · 4 năm kinh nghiệm\n\n5/5\n· 1 đánh giá\n220.000đ / buổi\n45 phút / buổi\nLưu hồ sơ\nGiới thiệu\n\nTập trung phản xạ giao tiếp và phương pháp tự học để học viên tiến bộ bền vững.\n\nPhương pháp đồng hành\n\nKết hợp luyện nghe, giao tiếp và sửa bài trực tiếp. Xây dựng thói quen tự học với bài",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/requests/new",
+    "metrics": {
+      "width": 1440,
+      "scroll": 1440,
+      "headings": [
+        "Nguyễn Mai Anh",
+        "Giới thiệu",
+        "Môn dạy & cấp độ",
+        "Lịch rảnh trong tuần",
+        "Khu vực & hình thức dạy",
+        "Gửi yêu cầu học",
+        "Đánh giá gần đây"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nTìm gia sư\n/\nHồ sơ gia sư\nMA\nHỒ SƠ GIA SƯ · DEMO\nNguyễn Mai Anh\nHồ sơ demo đã xác minh\n\nĐH Khoa học Tự nhiên · 3 năm kinh nghiệm\n\n5/5\n· 1 đánh giá\n180.000đ / buổi\n90 phút / buổi\nLưu hồ sơ\nGiới thiệu\n\nGiúp học sinh xây nền tảng vững chắc qua cách giải thích gần gũi và lộ trình học rõ ràng.\n\nPhương pháp đồng hành\n\nBắt đầu bằng việc kiểm tra nền tảng, chia nhỏ các dạng bài và luyện ",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/requests",
+    "metrics": {
+      "width": 1440,
+      "scroll": 1440,
+      "headings": [
+        "Yêu cầu học của tôi"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nKHÔNG GIAN NGƯỜI HỌC · DEMO\nYêu cầu học của tôi\n\nTheo dõi trạng thái kết nối và lịch học trong bản demo.\n\nTất cả\nChờ phản hồi\nĐã xác nhận\nHoàn tất\nĐã từ chối\nĐã hủy\nToán với Nguyễn Mai Anh\nCủng cố kiến thức lớp 9 · Thứ 3 · 18:00\nChờ phản hồi\nTiếng Anh với Trần Gia Bảo\nLuyện giao tiếp · Thứ 7 · 09:00\nĐã xác nhận\nNgữ văn với Phạm Hà Linh\nLuyện viết · Thứ 5 · 19:00\nHoàn tất\nTN\nTutor",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/requests/req-1",
+    "metrics": {
+      "width": 1440,
+      "scroll": 1440,
+      "headings": [
+        "Không tìm thấy yêu cầu"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nKHÔNG GIAN NGƯỜI HỌC · DEMO\nKhông tìm thấy yêu cầu\n\nYêu cầu này không có trong dữ liệu demo.\n\nXem các yêu cầu\nTN\nTutorNearMe\nGia sư gần bạn\n\nKết nối người học và gia sư theo môn học, khu vực, lịch rảnh và mục tiêu.\n\nNgười học\nDành cho người học\nTìm gia sư\nYêu cầu học\nGia sư\nTrở thành gia sư\nKhông gian gia sư\nCơ hội dạy\nKhám phá\nTrang chủ\nAdmin demo\n© 2026 TutorNearMe · Giao diện ",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/learner/post-class",
+    "metrics": {
+      "width": 1440,
+      "scroll": 1440,
+      "headings": [
+        "Bước 1: Môn học và Khối lớp"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\n1\nBƯỚC 1\nMôn & Khối lớp\n2\nBƯỚC 2\nĐịa điểm & Lịch học\n3\nBƯỚC 3\nNgân sách & Mục tiêu\nBước 1: Môn học và Khối lớp\n\nChọn môn học và cấp độ học viên để kết nối nhanh chóng với các gia sư có chuyên môn phù hợp.\n\nMôn học cần tìm gia sư *\nToán\nNgữ văn\nTiếng Anh\nVật lý\nHóa học\nSinh học\nLịch sử\nĐịa lý\nKhối lớp học viên *\nLớp 1\nLớp 2\nLớp 3\nLớp 4\nLớp 5\nLớp 6\nLớp 7\nLớp 8\nLớp 9\nLớp 10\nLớp 11\nL",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/learner/my-classes",
+    "metrics": {
+      "width": 1440,
+      "scroll": 1440,
+      "headings": [
+        "Lớp học của tôi",
+        "Toán – Lớp 8"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nLớp học của tôi\n\nTheo dõi các tin tìm gia sư đã đăng, xem hồ sơ ứng tuyển và chọn gia sư phù hợp nhất.\n\nĐăng tin tìm gia sư\nĐang tìm gia sư (Mở) (1)\nĐã chốt gia sư (0)\nĐã đóng / Hết hạn (0)\nMÃ LỚP: #POST-101\nĐang mở nhận hồ sơ\nToán – Lớp 8\nNgân sách dự kiến\n220.000 đ / buổi (Cố định)\nBình Thạnh, TP. Hồ Chí Minh (Tại nhà)\nThứ 3 và Thứ 5 (18:30 - 20:00)\n2\ngia sư đã ứng tuyển\n🎯 Yêu",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/learner/wallet",
+    "metrics": {
+      "width": 1440,
+      "scroll": 1440,
+      "headings": [
+        "Ví học viên & Bảo vệ Ký quỹ Escrow",
+        "Lịch sử biến động số dư"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nHỆ THỐNG VÍ ĐIỆN TỬ & KÝ QUỸ\nVí học viên & Bảo vệ Ký quỹ Escrow\n\nTiền học được bảo vệ 100% trong hợp đồng thông minh Escrow. Chỉ giải ngân khi bạn đã hài lòng với buổi dạy.\n\nSố dư khả dụng\n2.500.000 đ\n\nDùng để thanh toán giữ chỗ lịch học và kích hoạt ký quỹ bảo vệ cho gia sư ngay lập tức.\n\nNạp tiền VietQR Napas 247\nTiền đang tạm giữ Ký quỹ (Escrow)\n440.000 đ\nỔ khóa bảo vệ đa tầng",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/learner/schedule",
+    "metrics": {
+      "width": 1440,
+      "scroll": 1440,
+      "headings": [
+        "Lịch học gia sư của bạn"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nLỊCH HỌC & LỚP TRỰC TUYẾN\nLịch học gia sư của bạn\n\nXem lịch học, tham gia phòng học Google Meet và quản lý bảo lưu buổi dạy.\n\nDanh sách\nLịch tuần\nTất cả (20)\nSắp diễn ra\nĐã hoàn thành\nĐã hủy\nThứ 3, 06/10\n2026\nToán\n07:00 – 07:45\n•\nGia sư: Trần Gia Bảo\n•\nĐịa điểm minh họa\nVào phòng học Online\nChi tiết & Hủy lịch\nThứ 5, 08/10\n2026\nTiếng Anh\n08:30 – 09:15\n•\nGia sư: Trần Gia Bảo\n•\nĐịa",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1440,
+    "route": "/messages",
+    "metrics": {
+      "width": 1440,
+      "scroll": 1440,
+      "headings": [
+        "Tin nhắn"
+      ],
+      "body": "TutorNearMe · Trò chuyện\nQuay lại bảng điều khiển\nMA\nTin nhắn\nGB\nTrần Gia Bảo\n15:10\n\nGia sư vừa gửi đề xuất học phí: 220.000 đ/buổi (2 buổi/tuần)\n\n1\nGB\nTrần Gia Bảo\n\nGia sư · Trực tuyến\n\n⚠️\nCẢNH BÁO: Mọi thỏa thuận chuyển khoản ngoài sàn sẽ MẤT TOÀN BỘ BẢO HIỂM HOÀN TIỀN 100%. TutorNearMe miễn trừ mọi trách nhiệm khi giao dịch ngoài hệ thống.\nHôm nay\nChào bạn Bảo, bé nhà mình hiện đang bị hổng phần hình học lớp 8, bạn có thể kèm tuần 2 buổi được không?\n14:45\nDạ chào chị Minh Anh! Em hoàn toàn sắ",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/learner/search",
+    "metrics": {
+      "width": 1024,
+      "scroll": 1024,
+      "headings": [
+        "Bạn đau đầu để\ntìm gia sư tốt,\nTutorNearMe\nsẽ giúp bạn.",
+        "Một lựa chọn tốt bắt đầu từ sự phù hợp"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nTUTORNEARME · HỌC GẦN HƠN, HIỂU NHAU HƠN\nBạn đau đầu để\ntìm gia sư tốt,\nTutorNearMe\nsẽ giúp bạn.\n\nTìm sinh viên gia sư theo đúng môn, khu vực, thời gian rảnh và mức phí gia đình mong muốn — tất cả trong một trải nghiệm rõ ràng, dễ so sánh.\n\nTìm gia sư phù hợp\nXem cách hoạt động ↘\nGần bạn\nưu tiên khu vực phù hợp\n4.9/5\nđánh giá demo\nTên hoặc từ khóa\nMôn học\nTất cả môn\nToán\nVật lý\nT",
+      "small": []
+    },
+    "errors": [
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    ]
+  },
+  {
+    "width": 1024,
+    "route": "/learner/dashboard",
+    "metrics": {
+      "width": 1024,
+      "scroll": 1024,
+      "headings": [
+        "Việc học của bạn,\ngọn trong một nơi.",
+        "Thông tin cá nhân",
+        "Địa chỉ đang sinh sống",
+        "Gia sư đã lưu\n0",
+        "Yêu cầu học gần đây",
+        "Lịch đã xác nhận"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nKHÔNG GIAN NGƯỜI HỌC\nViệc học của bạn,\ngọn trong một nơi.\n\nQuản lý hồ sơ, theo dõi yêu cầu và kết nối với gia sư phù hợp.\n\nTìm gia sư\nMA\nXin chào, Nguyễn Minh Anh!\n@minhanh · Người học\nXem và cập nhật hồ sơ\n1\nYêu cầu chờ phản hồi\n1\nYêu cầu đã xác nhận\n0\nGia sư đã lưu\nLịch học\nVí tiền\nThông tin cá nhân\nĐịa chỉ\nYêu cầu học\nGia sư đã lưu\nKháng cáo\nHỒ SƠ TÀI KHOẢN\nThông tin cá nhân\nC",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/tutors/quoc-bao",
+    "metrics": {
+      "width": 1024,
+      "scroll": 1024,
+      "headings": [
+        "Trần Gia Bảo",
+        "Giới thiệu",
+        "Môn dạy & cấp độ",
+        "Lịch rảnh trong tuần",
+        "Khu vực & hình thức dạy",
+        "Gửi yêu cầu học",
+        "Đánh giá gần đây"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nTìm gia sư\n/\nHồ sơ gia sư\nGB\nHỒ SƠ GIA SƯ · DEMO\nTrần Gia Bảo\nHồ sơ demo đã xác minh\n\nĐH Ngoại thương · 4 năm kinh nghiệm\n\n5/5\n· 1 đánh giá\n220.000đ / buổi\n45 phút / buổi\nLưu hồ sơ\nGiới thiệu\n\nTập trung phản xạ giao tiếp và phương pháp tự học để học viên tiến bộ bền vững.\n\nPhương pháp đồng hành\n\nKết hợp luyện nghe, giao tiếp và sửa bài trực tiếp. Xây dựng thói quen tự học với bài",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/requests/new",
+    "metrics": {
+      "width": 1024,
+      "scroll": 1024,
+      "headings": [
+        "Nguyễn Mai Anh",
+        "Giới thiệu",
+        "Môn dạy & cấp độ",
+        "Lịch rảnh trong tuần",
+        "Khu vực & hình thức dạy",
+        "Gửi yêu cầu học",
+        "Đánh giá gần đây"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nTìm gia sư\n/\nHồ sơ gia sư\nMA\nHỒ SƠ GIA SƯ · DEMO\nNguyễn Mai Anh\nHồ sơ demo đã xác minh\n\nĐH Khoa học Tự nhiên · 3 năm kinh nghiệm\n\n5/5\n· 1 đánh giá\n180.000đ / buổi\n90 phút / buổi\nLưu hồ sơ\nGiới thiệu\n\nGiúp học sinh xây nền tảng vững chắc qua cách giải thích gần gũi và lộ trình học rõ ràng.\n\nPhương pháp đồng hành\n\nBắt đầu bằng việc kiểm tra nền tảng, chia nhỏ các dạng bài và luyện ",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/requests",
+    "metrics": {
+      "width": 1024,
+      "scroll": 1024,
+      "headings": [
+        "Yêu cầu học của tôi"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nKHÔNG GIAN NGƯỜI HỌC · DEMO\nYêu cầu học của tôi\n\nTheo dõi trạng thái kết nối và lịch học trong bản demo.\n\nTất cả\nChờ phản hồi\nĐã xác nhận\nHoàn tất\nĐã từ chối\nĐã hủy\nToán với Nguyễn Mai Anh\nCủng cố kiến thức lớp 9 · Thứ 3 · 18:00\nChờ phản hồi\nTiếng Anh với Trần Gia Bảo\nLuyện giao tiếp · Thứ 7 · 09:00\nĐã xác nhận\nNgữ văn với Phạm Hà Linh\nLuyện viết · Thứ 5 · 19:00\nHoàn tất\nTN\nTutor",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/requests/req-1",
+    "metrics": {
+      "width": 1024,
+      "scroll": 1024,
+      "headings": [
+        "Không tìm thấy yêu cầu"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nKHÔNG GIAN NGƯỜI HỌC · DEMO\nKhông tìm thấy yêu cầu\n\nYêu cầu này không có trong dữ liệu demo.\n\nXem các yêu cầu\nTN\nTutorNearMe\nGia sư gần bạn\n\nKết nối người học và gia sư theo môn học, khu vực, lịch rảnh và mục tiêu.\n\nNgười học\nDành cho người học\nTìm gia sư\nYêu cầu học\nGia sư\nTrở thành gia sư\nKhông gian gia sư\nCơ hội dạy\nKhám phá\nTrang chủ\nAdmin demo\n© 2026 TutorNearMe · Giao diện ",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/learner/post-class",
+    "metrics": {
+      "width": 1024,
+      "scroll": 1024,
+      "headings": [
+        "Bước 1: Môn học và Khối lớp"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\n1\nBƯỚC 1\nMôn & Khối lớp\n2\nBƯỚC 2\nĐịa điểm & Lịch học\n3\nBƯỚC 3\nNgân sách & Mục tiêu\nBước 1: Môn học và Khối lớp\n\nChọn môn học và cấp độ học viên để kết nối nhanh chóng với các gia sư có chuyên môn phù hợp.\n\nMôn học cần tìm gia sư *\nToán\nNgữ văn\nTiếng Anh\nVật lý\nHóa học\nSinh học\nLịch sử\nĐịa lý\nKhối lớp học viên *\nLớp 1\nLớp 2\nLớp 3\nLớp 4\nLớp 5\nLớp 6\nLớp 7\nLớp 8\nLớp 9\nLớp 10\nLớp 11\nL",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/learner/my-classes",
+    "metrics": {
+      "width": 1024,
+      "scroll": 1024,
+      "headings": [
+        "Lớp học của tôi",
+        "Toán – Lớp 8"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nLớp học của tôi\n\nTheo dõi các tin tìm gia sư đã đăng, xem hồ sơ ứng tuyển và chọn gia sư phù hợp nhất.\n\nĐăng tin tìm gia sư\nĐang tìm gia sư (Mở) (1)\nĐã chốt gia sư (0)\nĐã đóng / Hết hạn (0)\nMÃ LỚP: #POST-101\nĐang mở nhận hồ sơ\nToán – Lớp 8\nNgân sách dự kiến\n220.000 đ / buổi (Cố định)\nBình Thạnh, TP. Hồ Chí Minh (Tại nhà)\nThứ 3 và Thứ 5 (18:30 - 20:00)\n2\ngia sư đã ứng tuyển\n🎯 Yêu",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/learner/wallet",
+    "metrics": {
+      "width": 1024,
+      "scroll": 1024,
+      "headings": [
+        "Ví học viên & Bảo vệ Ký quỹ Escrow",
+        "Lịch sử biến động số dư"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nHỆ THỐNG VÍ ĐIỆN TỬ & KÝ QUỸ\nVí học viên & Bảo vệ Ký quỹ Escrow\n\nTiền học được bảo vệ 100% trong hợp đồng thông minh Escrow. Chỉ giải ngân khi bạn đã hài lòng với buổi dạy.\n\nSố dư khả dụng\n2.500.000 đ\n\nDùng để thanh toán giữ chỗ lịch học và kích hoạt ký quỹ bảo vệ cho gia sư ngay lập tức.\n\nNạp tiền VietQR Napas 247\nTiền đang tạm giữ Ký quỹ (Escrow)\n440.000 đ\nỔ khóa bảo vệ đa tầng",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/learner/schedule",
+    "metrics": {
+      "width": 1024,
+      "scroll": 1024,
+      "headings": [
+        "Lịch học gia sư của bạn"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\nĐăng tin lớp\nLớp của tôi\nLịch học\nVí của tôi\nTrợ giúp\n1\nMA\nminhanh\nĐăng xuất\nLỊCH HỌC & LỚP TRỰC TUYẾN\nLịch học gia sư của bạn\n\nXem lịch học, tham gia phòng học Google Meet và quản lý bảo lưu buổi dạy.\n\nDanh sách\nLịch tuần\nTất cả (20)\nSắp diễn ra\nĐã hoàn thành\nĐã hủy\nThứ 3, 06/10\n2026\nToán\n07:00 – 07:45\n•\nGia sư: Trần Gia Bảo\n•\nĐịa điểm minh họa\nVào phòng học Online\nChi tiết & Hủy lịch\nThứ 5, 08/10\n2026\nTiếng Anh\n08:30 – 09:15\n•\nGia sư: Trần Gia Bảo\n•\nĐịa",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 1024,
+    "route": "/messages",
+    "metrics": {
+      "width": 1024,
+      "scroll": 1024,
+      "headings": [
+        "Tin nhắn"
+      ],
+      "body": "TutorNearMe · Trò chuyện\nQuay lại bảng điều khiển\nMA\nTin nhắn\nGB\nTrần Gia Bảo\n15:10\n\nGia sư vừa gửi đề xuất học phí: 220.000 đ/buổi (2 buổi/tuần)\n\n1\nGB\nTrần Gia Bảo\n\nGia sư · Trực tuyến\n\n⚠️\nCẢNH BÁO: Mọi thỏa thuận chuyển khoản ngoài sàn sẽ MẤT TOÀN BỘ BẢO HIỂM HOÀN TIỀN 100%. TutorNearMe miễn trừ mọi trách nhiệm khi giao dịch ngoài hệ thống.\nHôm nay\nChào bạn Bảo, bé nhà mình hiện đang bị hổng phần hình học lớp 8, bạn có thể kèm tuần 2 buổi được không?\n14:45\nDạ chào chị Minh Anh! Em hoàn toàn sắ",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/learner/search",
+    "metrics": {
+      "width": 390,
+      "scroll": 390,
+      "headings": [
+        "Bạn đau đầu để\ntìm gia sư tốt,\nTutorNearMe\nsẽ giúp bạn.",
+        "Một lựa chọn tốt bắt đầu từ sự phù hợp"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTUTORNEARME · HỌC GẦN HƠN, HIỂU NHAU HƠN\nBạn đau đầu để\ntìm gia sư tốt,\nTutorNearMe\nsẽ giúp bạn.\n\nTìm sinh viên gia sư theo đúng môn, khu vực, thời gian rảnh và mức phí gia đình mong muốn — tất cả trong một trải nghiệm rõ ràng, dễ so sánh.\n\nTìm gia sư phù hợp\nXem cách hoạt động ↘\nGần bạn\nưu tiên khu vực phù hợp\n4.9/5\nđánh giá demo\nTên hoặc từ khóa\nMôn học\nTất cả môn\nToán\nVật lý\nTiếng Anh\nIELTS\nNgữ văn\nHóa học\nKhu vực\nTất cả khu vực\nBình Thạnh\nThủ Đức\nQuận 3\nPhú Nhuậ",
+      "small": []
+    },
+    "errors": [
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED",
+      "Failed to load resource: net::ERR_NETWORK_ACCESS_DENIED"
+    ]
+  },
+  {
+    "width": 390,
+    "route": "/learner/dashboard",
+    "metrics": {
+      "width": 390,
+      "scroll": 390,
+      "headings": [
+        "Việc học của bạn,\ngọn trong một nơi.",
+        "Thông tin cá nhân",
+        "Địa chỉ đang sinh sống",
+        "Gia sư đã lưu\n0",
+        "Yêu cầu học gần đây",
+        "Lịch đã xác nhận"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nKHÔNG GIAN NGƯỜI HỌC\nViệc học của bạn,\ngọn trong một nơi.\n\nQuản lý hồ sơ, theo dõi yêu cầu và kết nối với gia sư phù hợp.\n\nTìm gia sư\nMA\nXin chào, Nguyễn Minh Anh!\n@minhanh · Người học\nXem và cập nhật hồ sơ\n1\nYêu cầu chờ phản hồi\n1\nYêu cầu đã xác nhận\n0\nGia sư đã lưu\nLịch học\nVí tiền\nThông tin cá nhân\nĐịa chỉ\nYêu cầu học\nGia sư đã lưu\nKháng cáo\nHỒ SƠ TÀI KHOẢN\nThông tin cá nhân\nChỉnh sửa\nHọ và tên\nNguyễn Minh Anh\nLoại tài khoản\nNgười học\nEmail\nChưa cập nhật\nChưa xác",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/tutors/quoc-bao",
+    "metrics": {
+      "width": 390,
+      "scroll": 390,
+      "headings": [
+        "Trần Gia Bảo",
+        "Giới thiệu",
+        "Môn dạy & cấp độ",
+        "Lịch rảnh trong tuần",
+        "Khu vực & hình thức dạy",
+        "Gửi yêu cầu học",
+        "Đánh giá gần đây"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\n/\nHồ sơ gia sư\nGB\nHỒ SƠ GIA SƯ · DEMO\nTrần Gia Bảo\nHồ sơ demo đã xác minh\n\nĐH Ngoại thương · 4 năm kinh nghiệm\n\n5/5\n· 1 đánh giá\n220.000đ / buổi\n45 phút / buổi\nLưu hồ sơ\nGiới thiệu\n\nTập trung phản xạ giao tiếp và phương pháp tự học để học viên tiến bộ bền vững.\n\nPhương pháp đồng hành\n\nKết hợp luyện nghe, giao tiếp và sửa bài trực tiếp. Xây dựng thói quen tự học với bài tập ngắn, theo dõi những lỗi thường gặp và phản hồi sau từng buổi.\n\nMôn dạy & cấp độ\n\nC",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/requests/new",
+    "metrics": {
+      "width": 390,
+      "scroll": 390,
+      "headings": [
+        "Nguyễn Mai Anh",
+        "Giới thiệu",
+        "Môn dạy & cấp độ",
+        "Lịch rảnh trong tuần",
+        "Khu vực & hình thức dạy",
+        "Gửi yêu cầu học",
+        "Đánh giá gần đây"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nTìm gia sư\n/\nHồ sơ gia sư\nMA\nHỒ SƠ GIA SƯ · DEMO\nNguyễn Mai Anh\nHồ sơ demo đã xác minh\n\nĐH Khoa học Tự nhiên · 3 năm kinh nghiệm\n\n5/5\n· 1 đánh giá\n180.000đ / buổi\n90 phút / buổi\nLưu hồ sơ\nGiới thiệu\n\nGiúp học sinh xây nền tảng vững chắc qua cách giải thích gần gũi và lộ trình học rõ ràng.\n\nPhương pháp đồng hành\n\nBắt đầu bằng việc kiểm tra nền tảng, chia nhỏ các dạng bài và luyện tập theo mức độ. Sau mỗi buổi, học viên nhận phần tổng kết và bài tập phù hợp với mục ti",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/requests",
+    "metrics": {
+      "width": 390,
+      "scroll": 390,
+      "headings": [
+        "Yêu cầu học của tôi"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nKHÔNG GIAN NGƯỜI HỌC · DEMO\nYêu cầu học của tôi\n\nTheo dõi trạng thái kết nối và lịch học trong bản demo.\n\nTất cả\nChờ phản hồi\nĐã xác nhận\nHoàn tất\nĐã từ chối\nĐã hủy\nToán với Nguyễn Mai Anh\nCủng cố kiến thức lớp 9 · Thứ 3 · 18:00\nChờ phản hồi\nTiếng Anh với Trần Gia Bảo\nLuyện giao tiếp · Thứ 7 · 09:00\nĐã xác nhận\nNgữ văn với Phạm Hà Linh\nLuyện viết · Thứ 5 · 19:00\nHoàn tất\nTN\nTutorNearMe\nGia sư gần bạn\n\nKết nối người học và gia sư theo môn học, khu vực, lịch rảnh và m",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/requests/req-1",
+    "metrics": {
+      "width": 390,
+      "scroll": 390,
+      "headings": [
+        "Không tìm thấy yêu cầu"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nKHÔNG GIAN NGƯỜI HỌC · DEMO\nKhông tìm thấy yêu cầu\n\nYêu cầu này không có trong dữ liệu demo.\n\nXem các yêu cầu\nTN\nTutorNearMe\nGia sư gần bạn\n\nKết nối người học và gia sư theo môn học, khu vực, lịch rảnh và mục tiêu.\n\nNgười học\nDành cho người học\nTìm gia sư\nYêu cầu học\nGia sư\nTrở thành gia sư\nKhông gian gia sư\nCơ hội dạy\nKhám phá\nTrang chủ\nAdmin demo\n© 2026 TutorNearMe · Giao diện tương tác với dữ liệu minh họa.\n1",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/learner/post-class",
+    "metrics": {
+      "width": 390,
+      "scroll": 390,
+      "headings": [
+        "Bước 1: Môn học và Khối lớp"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\n1\nBƯỚC 1\nMôn & Khối lớp\n2\nBƯỚC 2\nĐịa điểm & Lịch học\n3\nBƯỚC 3\nNgân sách & Mục tiêu\nBước 1: Môn học và Khối lớp\n\nChọn môn học và cấp độ học viên để kết nối nhanh chóng với các gia sư có chuyên môn phù hợp.\n\nMôn học cần tìm gia sư *\nToán\nNgữ văn\nTiếng Anh\nVật lý\nHóa học\nSinh học\nLịch sử\nĐịa lý\nKhối lớp học viên *\nLớp 1\nLớp 2\nLớp 3\nLớp 4\nLớp 5\nLớp 6\nLớp 7\nLớp 8\nLớp 9\nLớp 10\nLớp 11\nLớp 12\nĐại học\nNgười đi làm\nHủy bỏ\nTiếp tục: Địa điểm & Lịch học\nTN\nTutorNearMe\nGia sư gầ",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/learner/my-classes",
+    "metrics": {
+      "width": 390,
+      "scroll": 390,
+      "headings": [
+        "Lớp học của tôi",
+        "Toán – Lớp 8"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nLớp học của tôi\n\nTheo dõi các tin tìm gia sư đã đăng, xem hồ sơ ứng tuyển và chọn gia sư phù hợp nhất.\n\nĐăng tin tìm gia sư\nĐang tìm gia sư (Mở) (1)\nĐã chốt gia sư (0)\nĐã đóng / Hết hạn (0)\nMÃ LỚP: #POST-101\nĐang mở nhận hồ sơ\nToán – Lớp 8\nNgân sách dự kiến\n220.000 đ / buổi (Cố định)\nBình Thạnh, TP. Hồ Chí Minh (Tại nhà)\nThứ 3 và Thứ 5 (18:30 - 20:00)\n2\ngia sư đã ứng tuyển\n🎯 Yêu cầu học thử 30-45 phút\n\nMục tiêu: Lấy lại căn bản hình học không gian và ôn thi giữa kỳ",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/learner/wallet",
+    "metrics": {
+      "width": 390,
+      "scroll": 390,
+      "headings": [
+        "Ví học viên & Bảo vệ Ký quỹ Escrow",
+        "Lịch sử biến động số dư"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nHỆ THỐNG VÍ ĐIỆN TỬ & KÝ QUỸ\nVí học viên & Bảo vệ Ký quỹ Escrow\n\nTiền học được bảo vệ 100% trong hợp đồng thông minh Escrow. Chỉ giải ngân khi bạn đã hài lòng với buổi dạy.\n\nSố dư khả dụng\n2.500.000 đ\n\nDùng để thanh toán giữ chỗ lịch học và kích hoạt ký quỹ bảo vệ cho gia sư ngay lập tức.\n\nNạp tiền VietQR Napas 247\nTiền đang tạm giữ Ký quỹ (Escrow)\n440.000 đ\nỔ khóa bảo vệ đa tầng TutorNearMe Escrow\n\nKhoản tiền này đang được phong tỏa bảo vệ quyền lợi của bạn. Nếu gi",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/learner/schedule",
+    "metrics": {
+      "width": 390,
+      "scroll": 390,
+      "headings": [
+        "Lịch học gia sư của bạn"
+      ],
+      "body": "TN\nTutorNearMe\nGia sư gần bạn\nLỊCH HỌC & LỚP TRỰC TUYẾN\nLịch học gia sư của bạn\n\nXem lịch học, tham gia phòng học Google Meet và quản lý bảo lưu buổi dạy.\n\nDanh sách\nLịch tuần\nTất cả (20)\nSắp diễn ra\nĐã hoàn thành\nĐã hủy\nThứ 3, 06/10\n2026\nToán\n07:00 – 07:45\n•\nGia sư: Trần Gia Bảo\n•\nĐịa điểm minh họa\nVào phòng học Online\nChi tiết & Hủy lịch\nThứ 5, 08/10\n2026\nTiếng Anh\n08:30 – 09:15\n•\nGia sư: Trần Gia Bảo\n•\nĐịa điểm minh họa\nVào phòng học Online\nChi tiết & Hủy lịch\nThứ 6, 09/10\n2026\nVật lý\n13:00 –",
+      "small": []
+    },
+    "errors": []
+  },
+  {
+    "width": 390,
+    "route": "/messages",
+    "metrics": {
+      "width": 390,
+      "scroll": 390,
+      "headings": [
+        "Tin nhắn"
+      ],
+      "body": "TutorNearMe · Trò chuyện\nQuay lại bảng điều khiển\nMA\nTin nhắn\nGB\nTrần Gia Bảo\n15:10\n\nGia sư vừa gửi đề xuất học phí: 220.000 đ/buổi (2 buổi/tuần)\n\n1",
+      "small": []
+    },
+    "errors": []
+  }
+]

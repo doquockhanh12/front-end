@@ -1,0 +1,647 @@
+/* Marketplace & Bidding Subsystem Styling */
+
+/* Stepper and Post Class Flow */
+.marketplace-container {
+  width: min(1000px, calc(100% - 2 * var(--page-padding, 20px)));
+  margin-inline: auto;
+  padding-block: 32px 64px;
+}
+
+.marketplace-step-header {
+  margin-bottom: 28px;
+  background: var(--color-surface, #fff);
+  border: var(--border-default, 1px solid #e2e8f0);
+  border-radius: var(--radius-lg, 12px);
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.marketplace-stepper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  position: relative;
+}
+
+.marketplace-step-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  color: var(--color-text-secondary, #64748b);
+  font-size: 0.92rem;
+  font-weight: 600;
+  cursor: default;
+}
+
+.marketplace-step-item.is-active {
+  color: var(--color-brand, #2563eb);
+}
+
+.marketplace-step-item.is-completed {
+  color: #059669;
+}
+
+.marketplace-step-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 2px solid #cbd5e1;
+  background: var(--color-surface, #fff);
+  font-weight: 700;
+  font-size: 0.95rem;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+}
+
+.marketplace-step-item.is-active .marketplace-step-circle {
+  border-color: var(--color-brand, #2563eb);
+  background: #eff6ff;
+  color: var(--color-brand, #2563eb);
+}
+
+.marketplace-step-item.is-completed .marketplace-step-circle {
+  border-color: #059669;
+  background: #ecfdf5;
+  color: #059669;
+}
+
+.marketplace-step-divider {
+  flex: 1;
+  height: 2px;
+  background: #e2e8f0;
+  margin-inline: 8px;
+}
+
+.marketplace-step-divider.is-completed {
+  background: #059669;
+}
+
+/* Post Form Card */
+.marketplace-form-card {
+  background: var(--color-surface, #fff);
+  border: var(--border-default, 1px solid #e2e8f0);
+  border-radius: var(--radius-lg, 12px);
+  padding: 32px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+}
+
+.marketplace-form-section-title {
+  margin: 0 0 8px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--color-text-primary, #0f172a);
+}
+
+.marketplace-form-section-desc {
+  margin: 0 0 24px;
+  color: var(--color-text-secondary, #64748b);
+  font-size: 0.9rem;
+}
+
+.marketplace-form-grid {
+  display: grid;
+  gap: 20px;
+}
+.marketplace-concrete-sessions { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; border: var(--border-default); border-radius: var(--radius-sm); padding: 16px; min-width: 0; }
+.marketplace-concrete-sessions legend { font-weight: 700; }
+.marketplace-concrete-sessions input, .marketplace-concrete-sessions select { min-width: 0; width: 100%; }
+.marketplace-concrete-sessions > div { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+
+.marketplace-form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.marketplace-label {
+  font-weight: 600;
+  font-size: 0.92rem;
+  color: var(--color-text-primary, #1e293b);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.marketplace-label-hint {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-text-secondary, #64748b);
+}
+
+.marketplace-input,
+.marketplace-select,
+.marketplace-textarea {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: var(--radius-md, 8px);
+  font-size: 0.95rem;
+  background: var(--color-surface, #fff);
+  color: var(--color-text-primary, #0f172a);
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.marketplace-input:focus,
+.marketplace-select:focus,
+.marketplace-textarea:focus {
+  border-color: var(--color-brand, #2563eb);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* Quick Subject/Tag Pills */
+.marketplace-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.marketplace-pill {
+  padding: 6px 14px;
+  border: 1px solid #e2e8f0;
+  background: #f8fafc;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #334155;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.marketplace-pill:hover {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  color: var(--color-brand, #2563eb);
+}
+
+.marketplace-pill.is-selected {
+  background: #2563eb;
+  border-color: #2563eb;
+  color: #fff;
+}
+
+/* 4-mode Budget Controller */
+.marketplace-budget-modes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.marketplace-budget-mode-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 8px;
+  border: 2px solid #e2e8f0;
+  border-radius: var(--radius-md, 8px);
+  background: #f8fafc;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.15s ease;
+  min-height: 76px;
+}
+
+.marketplace-budget-mode-btn:hover {
+  border-color: #cbd5e1;
+  background: #f1f5f9;
+}
+
+.marketplace-budget-mode-btn.is-active {
+  border-color: var(--color-brand, #2563eb);
+  background: #eff6ff;
+  color: var(--color-brand, #2563eb);
+}
+
+.marketplace-budget-mode-title {
+  font-weight: 700;
+  font-size: 0.88rem;
+  margin-bottom: 2px;
+}
+
+.marketplace-budget-mode-sub {
+  font-size: 0.75rem;
+  color: var(--color-text-secondary, #64748b);
+}
+
+.marketplace-budget-mode-btn.is-active .marketplace-budget-mode-sub {
+  color: #1d4ed8;
+}
+
+.marketplace-budget-input-box {
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md, 8px);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.marketplace-budget-range-row {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Trial Lesson & Checkbox Box */
+.marketplace-checkbox-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: var(--radius-md, 8px);
+  background: #f8fafc;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.marketplace-checkbox-card:hover {
+  border-color: #cbd5e1;
+  background: #f1f5f9;
+}
+
+.marketplace-checkbox-card.is-checked {
+  border-color: #059669;
+  background: #ecfdf5;
+}
+
+.marketplace-checkbox-card input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin-top: 2px;
+  accent-color: #059669;
+  cursor: pointer;
+}
+
+.marketplace-checkbox-label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.marketplace-checkbox-title {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: #0f172a;
+}
+
+.marketplace-checkbox-desc {
+  font-size: 0.82rem;
+  color: #64748b;
+}
+
+/* Stepper Actions */
+.marketplace-step-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 32px;
+  padding-top: 24px;
+  border-top: 1px solid #e2e8f0;
+}
+
+/* Learner My Classes Page */
+.myclasses-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.myclasses-title-group h1 {
+  margin: 0 0 4px;
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.myclasses-title-group p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.92rem;
+}
+
+.myclasses-tabs {
+  display: flex;
+  gap: 8px;
+  border-bottom: 2px solid #e2e8f0;
+  margin-bottom: 24px;
+}
+
+.myclasses-tab {
+  padding: 10px 18px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #64748b;
+  border-bottom: 2px solid transparent;
+  margin-bottom: -2px;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.myclasses-tab:hover {
+  color: #1e293b;
+}
+
+.myclasses-tab.is-active {
+  color: var(--color-brand, #2563eb);
+  border-bottom-color: var(--color-brand, #2563eb);
+}
+
+.myclasses-grid {
+  display: grid;
+  gap: 20px;
+}
+
+.myclass-card {
+  background: var(--color-surface, #fff);
+  border: var(--border-default, 1px solid #e2e8f0);
+  border-radius: var(--radius-lg, 12px);
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+}
+
+.myclass-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.myclass-card__title {
+  margin: 0 0 6px;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.myclass-card__meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  color: #475569;
+  font-size: 0.88rem;
+  margin-bottom: 14px;
+}
+
+.myclass-card__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.myclass-card__tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 18px;
+}
+
+/* Proposals Section inside Class Card */
+.myclass-proposals-section {
+  border-top: 1px solid #e2e8f0;
+  padding-top: 18px;
+  margin-top: 16px;
+}
+
+.myclass-proposals-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 14px;
+}
+
+.myclass-proposals-title {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #0f172a;
+}
+
+.myclass-compare-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #2563eb, #1d4ed8);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.88rem;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(37,99,235,0.25);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.myclass-compare-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 8px rgba(37,99,235,0.3);
+}
+
+.myclass-proposals-list {
+  display: grid;
+  gap: 12px;
+}
+
+.myclass-proposal-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 14px;
+  padding: 14px 18px;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background: #f8fafc;
+}
+
+.myclass-proposal-card.is-selected {
+  border-color: #10b981;
+  background: #ecfdf5;
+}
+
+.myclass-proposal-tutor {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 240px;
+}
+
+.myclass-proposal-fee {
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: #2563eb;
+}
+
+/* Candidate Comparison Tool (Slide-over Drawer) */
+.comparison-drawer-scrim {
+  position: fixed;
+  inset: 0;
+  background: rgba(15, 23, 42, 0.55);
+  backdrop-filter: blur(3px);
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.comparison-drawer-panel {
+  position: relative;
+  width: min(920px, 95vw);
+  height: 100%;
+  background: #fff;
+  box-shadow: -6px 0 24px rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  animation: slideLeft 0.25s ease-out;
+}
+
+@keyframes slideLeft {
+  from { transform: translateX(100%); }
+  to { transform: translateX(0); }
+}
+
+.comparison-drawer-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 20px 24px;
+  background: #f8fafc;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.comparison-drawer-header h2 {
+  margin: 0 0 4px;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #0f172a;
+}
+
+.comparison-drawer-header p {
+  margin: 0;
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+.comparison-drawer-body {
+  flex: 1;
+  overflow-y: auto;
+  padding: 24px;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.candidate-column {
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  background: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.2s ease;
+}
+
+.candidate-column.is-selected {
+  border-color: #10b981;
+  background: #f0fdf4;
+  box-shadow: 0 0 0 2px #10b981;
+}
+
+.candidate-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.candidate-head-info h3 {
+  margin: 0 0 2px;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.candidate-head-info p {
+  margin: 0;
+  font-size: 0.78rem;
+  color: #64748b;
+}
+
+.candidate-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.candidate-row-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #94a3b8;
+}
+
+.candidate-row-value {
+  font-size: 0.92rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.candidate-actions {
+  margin-top: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 12px;
+  border-top: 1px solid #f1f5f9;
+}
+
+@media (max-width: 768px) {
+  .marketplace-form-card { padding: 20px 16px; }
+  .marketplace-step-actions { flex-direction: column; align-items: stretch; gap: 12px; }
+  .marketplace-step-actions > .button { width: 100%; min-width: 0; white-space: normal; text-align: center; }
+  .marketplace-step-actions > .button svg { flex-shrink: 0; }
+  .marketplace-budget-modes {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .marketplace-stepper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  .marketplace-step-divider {
+    display: none;
+  }
+  .comparison-drawer-panel {
+    width: 100vw;
+  }
+}
